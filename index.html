@@ -327,7 +327,7 @@
             <a href="#pricing" class="toc-h1 toc-link" data-title="Pricing">Pricing</a>
           </li>
           <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+            <a href="#hello-world-example" class="toc-h1 toc-link" data-title="Hello world example">Hello world example</a>
           </li>
       </ul>
         <ul class="toc-footer">
@@ -382,64 +382,127 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
            <span class="dl">"</span><span class="s2">rate</span><span class="dl">"</span><span class="p">:</span><span class="mi">100</span>
        <span class="p">}</span>
    <span class="p">]</span>
-</code></pre></div><h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request -- Your request is invalid.</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
-</tr>
-</tbody></table>
+</code></pre></div><h1 id='hello-world-example'>Hello world example</h1>
+<p>{
+   &quot;name&quot;:&quot;Hello World Data Product&quot;,
+   &quot;description&quot;:&quot;Product catalogs published by standardization organizations.&quot;,
+   &quot;valueProposition&quot;: &quot;selling sentence here&quot;,
+   &quot;rating&quot;:4.7,
+   &quot;ratingCount&quot;:1259,
+   &quot;activeUsers&quot;:123,
+   &quot;visibility&quot;:&quot;public&quot;,
+   &quot;status&quot;:&quot;Published&quot;,
+   &quot;version&quot;: &quot;1.0&quot;,
+   &quot;dataStream&quot;:{
+        &quot;harmonized&quot;:true,
+        &quot;supportedPayload&quot;:{
+         &quot;currentValues&quot;:{
+            &quot;requestContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/&quot;,
+            &quot;responseContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/&quot;,
+            &quot;version&quot;:&quot;2.0&quot;,
+            &quot;versionHistory&quot;:[
+               &quot;1.2&quot;,
+               &quot;2.0&quot;
+            ]
+         },
+         &quot;historyValues&quot;:{
+            &quot;requestContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/&quot;,
+            &quot;responseContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/&quot;,
+            &quot;version&quot;:&quot;2.0&quot;,
+            &quot;versionHistory&quot;:[
+               &quot;1.2&quot;,
+               &quot;2.0&quot;
+            ]
+         },
+         &quot;predictionValues&quot;:{
+            &quot;requestContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/&quot;,
+            &quot;responseContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/&quot;,
+            &quot;version&quot;:&quot;2.0&quot;,
+            &quot;versionHistory&quot;:[
+               &quot;1.2&quot;,
+               &quot;2.0&quot;
+            ]
+         }
+      }
+   },
+   &quot;condition&quot;:[
+      {
+         &quot;name&quot;:&quot;Reselling limitation&quot;,
+         &quot;descriptionGeneral&quot;:&quot;Information cannot be sold further. Only to be used within buying organization.&quot;,
+      }
+   ],
+   &quot;priceplan&quot;:[
+      {
+         &quot;name&quot;:&quot;Premium subscription 1 year&quot;,
+         &quot;currency&quot;:&quot;EUR&quot;,
+         &quot;unitGroup&quot;:&quot;Duration&quot;,
+         &quot;unit&quot;:&quot;year&quot;,
+         &quot;quantity&quot;:1,
+         &quot;rate&quot;:1000
+      },
+      {
+            &quot;name&quot;:&quot;Premium Package&quot;,
+            &quot;currency&quot;:&quot;EUR&quot;,
+            &quot;unitGroup&quot;:&quot;Transaction&quot;,
+            &quot;unit&quot;:&quot;Transaction&quot;,
+            &quot;quantity&quot;:100000,
+            &quot;rule&quot;:{
+               &quot;maxQuantity&quot;:100000
+            },
+            &quot;rate&quot;:100
+         },
+         {
+            &quot;name&quot;:&quot;Extra Requests&quot;,
+            &quot;currency&quot;:&quot;EUR&quot;,
+            &quot;unitGroup&quot;:&quot;Transaction&quot;,
+            &quot;unit&quot;:&quot;Transaction&quot;,
+            &quot;quantity&quot;:1,
+            &quot;rule&quot;:{
+               &quot;minQuantity&quot;:100001
+            },
+            &quot;rate&quot;:0.5
+         }
+   ],
+   &quot;quality&quot;:[
+      {
+         &quot;name&quot;:&quot;Update frequency&quot;,
+         &quot;value&quot;:&quot;Information is updated once per day.&quot;
+      },
+      {
+         &quot;name&quot;:&quot;Uptime&quot;,
+         &quot;value&quot;:&quot;99%&quot;
+      },
+      {
+         &quot;name&quot;:&quot;Response time&quot;,
+         &quot;value&quot;:&quot;400 ms&quot;
+      }
+   ],
+   &quot;service&quot;:[
+      {
+         &quot;name&quot;:&quot;Phone support hours&quot;,
+         &quot;descriptionGeneral&quot;:&quot;Support is available between 08-16 weekdays.&quot;,
+         &quot;categorizationLocal&quot;:&quot;Support&quot;,
+         &quot;categorizationPoT&quot;:&quot;dataProduct&quot;
+      }
+   ],
+   &quot;connector&quot;:[
+      {
+         &quot;name&quot;:&quot;Electrical devices catalog&quot;,
+         &quot;descriptionGeneral&quot;:&quot;Catalog of electrical devices.&quot;,
+         &quot;version&quot;:&quot;2.0&quot;,
+         &quot;monitoring&quot;:{
+            &quot;url&quot;:&quot;https://status.uptimerobot.com/&quot;
+         },
+      },
+      {
+         &quot;name&quot;:&quot;Furniture  catalog&quot;,
+         &quot;description&quot;:&quot;Catalog of furniture.&quot;,
+         &quot;version&quot;:&quot;3.0&quot;,
+         &quot;monitoring&quot;:{
+            &quot;url&quot;:&quot;https://status.uptimerobot.com/&quot;
+        }
+   ]
+}</p>
 
       </div>
       <div class="dark-box">
