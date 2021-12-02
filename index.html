@@ -383,127 +383,130 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
        <span class="p">}</span>
    <span class="p">]</span>
 </code></pre></div><h1 id='hello-world-example'>Hello world example</h1>
-<p>{
-   &quot;name&quot;:&quot;Hello World Data Product&quot;,
-   &quot;description&quot;:&quot;Product catalogs published by standardization organizations.&quot;,
-   &quot;valueProposition&quot;: &quot;selling sentence here&quot;,
-   &quot;rating&quot;:4.7,
-   &quot;ratingCount&quot;:1259,
-   &quot;activeUsers&quot;:123,
-   &quot;visibility&quot;:&quot;public&quot;,
-   &quot;status&quot;:&quot;Published&quot;,
-   &quot;version&quot;: &quot;1.0&quot;,
-   &quot;dataStream&quot;:{
-        &quot;harmonized&quot;:true,
-        &quot;supportedPayload&quot;:{
-         &quot;currentValues&quot;:{
-            &quot;requestContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/&quot;,
-            &quot;responseContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/&quot;,
-            &quot;version&quot;:&quot;2.0&quot;,
-            &quot;versionHistory&quot;:[
-               &quot;1.2&quot;,
-               &quot;2.0&quot;
-            ]
-         },
-         &quot;historyValues&quot;:{
-            &quot;requestContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/&quot;,
-            &quot;responseContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/&quot;,
-            &quot;version&quot;:&quot;2.0&quot;,
-            &quot;versionHistory&quot;:[
-               &quot;1.2&quot;,
-               &quot;2.0&quot;
-            ]
-         },
-         &quot;predictionValues&quot;:{
-            &quot;requestContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/&quot;,
-            &quot;responseContext&quot;:&quot;https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/&quot;,
-            &quot;version&quot;:&quot;2.0&quot;,
-            &quot;versionHistory&quot;:[
-               &quot;1.2&quot;,
-               &quot;2.0&quot;
-            ]
-         }
-      }
-   },
-   &quot;condition&quot;:[
-      {
-         &quot;name&quot;:&quot;Reselling limitation&quot;,
-         &quot;descriptionGeneral&quot;:&quot;Information cannot be sold further. Only to be used within buying organization.&quot;,
-      }
-   ],
-   &quot;priceplan&quot;:[
-      {
-         &quot;name&quot;:&quot;Premium subscription 1 year&quot;,
-         &quot;currency&quot;:&quot;EUR&quot;,
-         &quot;unitGroup&quot;:&quot;Duration&quot;,
-         &quot;unit&quot;:&quot;year&quot;,
-         &quot;quantity&quot;:1,
-         &quot;rate&quot;:1000
-      },
-      {
-            &quot;name&quot;:&quot;Premium Package&quot;,
-            &quot;currency&quot;:&quot;EUR&quot;,
-            &quot;unitGroup&quot;:&quot;Transaction&quot;,
-            &quot;unit&quot;:&quot;Transaction&quot;,
-            &quot;quantity&quot;:100000,
-            &quot;rule&quot;:{
-               &quot;maxQuantity&quot;:100000
-            },
-            &quot;rate&quot;:100
-         },
-         {
-            &quot;name&quot;:&quot;Extra Requests&quot;,
-            &quot;currency&quot;:&quot;EUR&quot;,
-            &quot;unitGroup&quot;:&quot;Transaction&quot;,
-            &quot;unit&quot;:&quot;Transaction&quot;,
-            &quot;quantity&quot;:1,
-            &quot;rule&quot;:{
-               &quot;minQuantity&quot;:100001
-            },
-            &quot;rate&quot;:0.5
-         }
-   ],
-   &quot;quality&quot;:[
-      {
-         &quot;name&quot;:&quot;Update frequency&quot;,
-         &quot;value&quot;:&quot;Information is updated once per day.&quot;
-      },
-      {
-         &quot;name&quot;:&quot;Uptime&quot;,
-         &quot;value&quot;:&quot;99%&quot;
-      },
-      {
-         &quot;name&quot;:&quot;Response time&quot;,
-         &quot;value&quot;:&quot;400 ms&quot;
-      }
-   ],
-   &quot;service&quot;:[
-      {
-         &quot;name&quot;:&quot;Phone support hours&quot;,
-         &quot;descriptionGeneral&quot;:&quot;Support is available between 08-16 weekdays.&quot;,
-         &quot;categorizationLocal&quot;:&quot;Support&quot;,
-         &quot;categorizationPoT&quot;:&quot;dataProduct&quot;
-      }
-   ],
-   &quot;connector&quot;:[
-      {
-         &quot;name&quot;:&quot;Electrical devices catalog&quot;,
-         &quot;descriptionGeneral&quot;:&quot;Catalog of electrical devices.&quot;,
-         &quot;version&quot;:&quot;2.0&quot;,
-         &quot;monitoring&quot;:{
-            &quot;url&quot;:&quot;https://status.uptimerobot.com/&quot;
-         },
-      },
-      {
-         &quot;name&quot;:&quot;Furniture  catalog&quot;,
-         &quot;description&quot;:&quot;Catalog of furniture.&quot;,
-         &quot;version&quot;:&quot;3.0&quot;,
-         &quot;monitoring&quot;:{
-            &quot;url&quot;:&quot;https://status.uptimerobot.com/&quot;
-        }
-   ]
-}</p>
-
+<blockquote>
+<p>Example of Pricing component usage:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+   <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Hello World Data Product</span><span class="dl">"</span><span class="p">,</span>
+   <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Product catalogs published by standardization organizations.</span><span class="dl">"</span><span class="p">,</span>
+   <span class="dl">"</span><span class="s2">valueProposition</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">selling sentence here</span><span class="dl">"</span><span class="p">,</span>
+   <span class="dl">"</span><span class="s2">rating</span><span class="dl">"</span><span class="p">:</span><span class="mf">4.7</span><span class="p">,</span>
+   <span class="dl">"</span><span class="s2">ratingCount</span><span class="dl">"</span><span class="p">:</span><span class="mi">1259</span><span class="p">,</span>
+   <span class="dl">"</span><span class="s2">activeUsers</span><span class="dl">"</span><span class="p">:</span><span class="mi">123</span><span class="p">,</span>
+   <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">public</span><span class="dl">"</span><span class="p">,</span>
+   <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Published</span><span class="dl">"</span><span class="p">,</span>
+   <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">1.0</span><span class="dl">"</span><span class="p">,</span>
+   <span class="dl">"</span><span class="s2">dataStream</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">harmonized</span><span class="dl">"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">supportedPayload</span><span class="dl">"</span><span class="p">:{</span>
+         <span class="dl">"</span><span class="s2">currentValues</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">requestContext</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">responseContext</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">versionHistory</span><span class="dl">"</span><span class="p">:[</span>
+               <span class="dl">"</span><span class="s2">1.2</span><span class="dl">"</span><span class="p">,</span>
+               <span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span>
+            <span class="p">]</span>
+         <span class="p">},</span>
+         <span class="dl">"</span><span class="s2">historyValues</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">requestContext</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">responseContext</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">versionHistory</span><span class="dl">"</span><span class="p">:[</span>
+               <span class="dl">"</span><span class="s2">1.2</span><span class="dl">"</span><span class="p">,</span>
+               <span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span>
+            <span class="p">]</span>
+         <span class="p">},</span>
+         <span class="dl">"</span><span class="s2">predictionValues</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">requestContext</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">responseContext</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">versionHistory</span><span class="dl">"</span><span class="p">:[</span>
+               <span class="dl">"</span><span class="s2">1.2</span><span class="dl">"</span><span class="p">,</span>
+               <span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span>
+            <span class="p">]</span>
+         <span class="p">}</span>
+      <span class="p">}</span>
+   <span class="p">},</span>
+   <span class="dl">"</span><span class="s2">condition</span><span class="dl">"</span><span class="p">:[</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Reselling limitation</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">descriptionGeneral</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Information cannot be sold further. Only to be used within buying organization.</span><span class="dl">"</span><span class="p">,</span>
+      <span class="p">}</span>
+   <span class="p">],</span>
+   <span class="dl">"</span><span class="s2">priceplan</span><span class="dl">"</span><span class="p">:[</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium subscription 1 year</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">currency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">unitGroup</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Duration</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">year</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">quantity</span><span class="dl">"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">rate</span><span class="dl">"</span><span class="p">:</span><span class="mi">1000</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium Package</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">currency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">unitGroup</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Transaction</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Transaction</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">quantity</span><span class="dl">"</span><span class="p">:</span><span class="mi">100000</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">rule</span><span class="dl">"</span><span class="p">:{</span>
+               <span class="dl">"</span><span class="s2">maxQuantity</span><span class="dl">"</span><span class="p">:</span><span class="mi">100000</span>
+            <span class="p">},</span>
+            <span class="dl">"</span><span class="s2">rate</span><span class="dl">"</span><span class="p">:</span><span class="mi">100</span>
+         <span class="p">},</span>
+         <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Extra Requests</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">currency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">unitGroup</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Transaction</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Transaction</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">quantity</span><span class="dl">"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">rule</span><span class="dl">"</span><span class="p">:{</span>
+               <span class="dl">"</span><span class="s2">minQuantity</span><span class="dl">"</span><span class="p">:</span><span class="mi">100001</span>
+            <span class="p">},</span>
+            <span class="dl">"</span><span class="s2">rate</span><span class="dl">"</span><span class="p">:</span><span class="mf">0.5</span>
+         <span class="p">}</span>
+   <span class="p">],</span>
+   <span class="dl">"</span><span class="s2">quality</span><span class="dl">"</span><span class="p">:[</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Update frequency</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Information is updated once per day.</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Uptime</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">99%</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Response time</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">400 ms</span><span class="dl">"</span>
+      <span class="p">}</span>
+   <span class="p">],</span>
+   <span class="dl">"</span><span class="s2">service</span><span class="dl">"</span><span class="p">:[</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Phone support hours</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">descriptionGeneral</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Support is available between 08-16 weekdays.</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">categorizationLocal</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Support</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">categorizationPoT</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">dataProduct</span><span class="dl">"</span>
+      <span class="p">}</span>
+   <span class="p">],</span>
+   <span class="dl">"</span><span class="s2">connector</span><span class="dl">"</span><span class="p">:[</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Electrical devices catalog</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">descriptionGeneral</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Catalog of electrical devices.</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2.0</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">monitoring</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://status.uptimerobot.com/</span><span class="dl">"</span>
+         <span class="p">},</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Furniture  catalog</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Catalog of furniture.</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">3.0</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">monitoring</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://status.uptimerobot.com/</span><span class="dl">"</span>
+        <span class="p">}</span>
+   <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
       </div>
       <div class="dark-box">
           <div class="lang-selector">
