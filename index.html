@@ -358,6 +358,8 @@
 <p>This is work in progress. </p>
 <h2 id='middle-column-principles-and-components'>Middle column: Principles and components</h2>
 <p>The middle column contains detailed information about the included components and related options. This is the theory part. </p>
+
+<p>Note! Mandatory elements and attributes are marked with <strong>bold names</strong> and <strong>*</strong> in the definition tables. </p>
 <h2 id='right-column-examples'>Right column: Examples</h2>
 <p>The right column contains JSON formatted examples of how the specification is used. </p>
 
@@ -376,7 +378,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <h1 id='pricing'>Pricing</h1>
 <p>Pricing component.....</p>
 
-<p>Mandatory elements and attributes are marked with <strong>bolded names</strong>. </p>
+<p>Mandatory elements and attributes are marked with <strong>bolded names</strong> and asterix <strong>*</strong>. </p>
 
 <table><thead>
 <tr>
@@ -387,13 +389,13 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </tr>
 </thead><tbody>
 <tr>
-<td><strong>name</strong></td>
+<td><strong>name</strong> <strong>*</strong></td>
 <td>string</td>
 <td>text content, max length 256 chars</td>
 <td>Attribute is the name of the data product.</td>
 </tr>
 <tr>
-<td><strong>currency</strong></td>
+<td><strong>currency</strong> <strong>*</strong></td>
 <td>string</td>
 <td>One of official <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> currency names. Three letters in capslock.</td>
 <td>The primary currency used in pricing. Platforms are assumed to use this as primary currency if currency conversions are used to display product pricing in different locations for various currencies</td>
