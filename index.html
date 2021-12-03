@@ -325,6 +325,14 @@
           </li>
           <li>
             <a href="#pricing" class="toc-h1 toc-link" data-title="Pricing">Pricing</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#mandatory-attributes-and-elements" class="toc-h2 toc-link" data-title="Mandatory attributes and elements">Mandatory attributes and elements</a>
+                  </li>
+                  <li>
+                    <a href="#optional-attributes-and-elements" class="toc-h2 toc-link" data-title="Optional attributes and elements">Optional attributes and elements</a>
+                  </li>
+              </ul>
           </li>
           <li>
             <a href="#data-pipeline" class="toc-h1 toc-link" data-title="Data Pipeline">Data Pipeline</a>
@@ -379,7 +387,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <p>Pricing component.....</p>
 
 <p>Mandatory elements and attributes are marked with <strong>bolded names</strong> and asterix <strong>*</strong>. </p>
-
+<h3 id='mandatory-attributes-and-elements'>Mandatory attributes and elements</h3>
 <table><thead>
 <tr>
 <th><div style="width:150px">Element name</div></th>
@@ -407,6 +415,38 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>The offer price of a product, or of a price component. Use &#39;.&#39; (Unicode &#39;FULL STOP&#39; (U+002E)) rather than &#39;,&#39; to indicate a decimal point. Avoid using these symbols as a readability separator. Use values from 0123456789 (Unicode &#39;DIGIT ZERO&#39; (U+0030) to &#39;DIGIT NINE&#39; (U+0039)) rather than superficially similiar Unicode symbols.</td>
 </tr>
 <tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>Example of Pricing component usage with manadatory elements and attributes:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">pricing</span><span class="dl">"</span><span class="p">:[</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium subscription 1 year</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium Package</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span>
+       <span class="p">}</span>
+   <span class="p">]</span>
+</code></pre></div><h3 id='optional-attributes-and-elements'>Optional attributes and elements</h3>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
 <td>minPrice</td>
 <td>string</td>
 <td>-</td>
@@ -427,27 +467,21 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </tbody></table>
 
 <blockquote>
-<p>Example of Pricing component usage:</p>
+<p>Example of Pricing component usage with some of the optional elements and attributes:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">priceplan</span><span class="dl">"</span><span class="p">:[</span>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">pricing</span><span class="dl">"</span><span class="p">:[</span>
       <span class="p">{</span>
          <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium subscription 1 year</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">currency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">unitGroup</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Duration</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">year</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">quantity</span><span class="dl">"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">rate</span><span class="dl">"</span><span class="p">:</span><span class="mi">1000</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">minPrice</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">maxPrice</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">15.000</span><span class="dl">"</span>
       <span class="p">},</span>
       <span class="p">{</span>
          <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium Package</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">currency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">unitGroup</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Transaction</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Transaction</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">quantity</span><span class="dl">"</span><span class="p">:</span><span class="mi">100000</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">rule</span><span class="dl">"</span><span class="p">:{</span>
-           <span class="dl">"</span><span class="s2">maxQuantity</span><span class="dl">"</span><span class="p">:</span><span class="mi">100000</span>
-        <span class="p">},</span>
-           <span class="dl">"</span><span class="s2">rate</span><span class="dl">"</span><span class="p">:</span><span class="mi">100</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">maxPrice</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">20.00</span><span class="dl">"</span>
        <span class="p">}</span>
    <span class="p">]</span>
 </code></pre></div><h1 id='data-pipeline'>Data Pipeline</h1>
