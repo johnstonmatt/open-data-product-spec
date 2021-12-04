@@ -432,6 +432,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>The offer price of a product, or of a price component. Use &#39;.&#39; (Unicode &#39;FULL STOP&#39; (U+002E)) rather than &#39;,&#39; to indicate a decimal point. Avoid using these symbols as a readability separator. Use values from 0123456789 (Unicode &#39;DIGIT ZERO&#39; (U+0030) to &#39;DIGIT NINE&#39; (U+0039)) rather than superficially similiar Unicode symbols.</td>
 </tr>
 <tr>
+<td><strong>billingDuration</strong> <strong>*</strong></td>
+<td>Duration</td>
+<td>day, week, month, year</td>
+<td>Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan.</td>
+</tr>
+<tr>
 <td></td>
 <td></td>
 <td></td>
@@ -448,7 +454,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
          <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">minPrice</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">maxPrice</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">15.000</span><span class="dl">"</span>
+         <span class="dl">"</span><span class="s2">maxPrice</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">15.000</span><span class="dl">"</span><span class="p">,</span> 
+         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span>
       <span class="p">},</span>
       <span class="p">{</span>
          <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium Package</span><span class="dl">"</span><span class="p">,</span>
