@@ -397,13 +397,15 @@ The JSON examples are not based on any real data product, but exemplify the usag
          <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium subscription 1 year</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">50.00</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">year</span><span class="dl">"</span>
+         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">year</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">billingType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span>
       <span class="p">},</span>
       <span class="p">{</span>
          <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium Package Monthly</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span> 
-         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span>
+         <span class="dl">"</span><span class="s2">billingDuration</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">month</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">billingType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">recurring</span><span class="dl">"</span>
        <span class="p">}</span>
    <span class="p">]</span>
 </code></pre></div>
@@ -436,8 +438,14 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <tr>
 <td><strong>billingDuration</strong> <strong>*</strong></td>
 <td>Duration</td>
-<td>day, week, month, year</td>
+<td>one-time-payment, pay-per-use, day, week, month, year</td>
 <td>Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan.</td>
+</tr>
+<tr>
+<td><strong>billingType</strong> <strong>*</strong></td>
+<td>string</td>
+<td>one-time-payment, pay-per-use, recurring</td>
+<td>One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. Pay-per-use is intended for continuous usage and price set is for each successful usage action. Recurrring is intended for continuous time period plans</td>
 </tr>
 <tr>
 <td></td>
