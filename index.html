@@ -408,7 +408,14 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <blockquote>
 <p>Example of document level attribute usage and structure:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="p">.....</span>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0.1</span><span class="dl">"</span>
+<span class="p">}</span>
+
 </code></pre></div>
 <table><thead>
 <tr>
@@ -425,10 +432,34 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>This is the product&#39;s value proposition. Often one or two sentences and crystallizes the value for the customer.</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>name</strong> <strong>*</strong></td>
+<td>string</td>
+<td>max length 256 chars</td>
+<td>The name of the product.</td>
+</tr>
+<tr>
+<td><strong>description</strong> <strong>*</strong></td>
+<td>string</td>
+<td>-</td>
+<td>The description of the product. Text only.</td>
+</tr>
+<tr>
+<td><strong>visibility</strong> <strong>*</strong></td>
+<td>one of</td>
+<td>one of: private, organisation, public</td>
+<td>The publicity level eg who can see this product. Private - just the creator. Organisation - visible to all in your organisation. Public - visible to all publicly</td>
+</tr>
+<tr>
+<td><strong>status</strong> <strong>*</strong></td>
+<td>one of</td>
+<td>one of: announcement, draft, development, testing, acceptance, production, retired</td>
+<td>The status of the product. Lifecycle model discussed in details in here (link).</td>
+</tr>
+<tr>
+<td><strong>version</strong> <strong>*</strong></td>
+<td>string</td>
+<td>The versioning scheme is <strong>major.minor.</strong>. Examples: 1.0, 2.1, 3.5</td>
+<td>The version of the product.</td>
 </tr>
 </tbody></table>
 
