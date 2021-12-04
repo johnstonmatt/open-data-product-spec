@@ -442,10 +442,16 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan.</td>
 </tr>
 <tr>
-<td><strong>billingType</strong> <strong>*</strong></td>
+<td><strong>unit</strong> <strong>*</strong></td>
 <td>string</td>
 <td>one-time-payment, pay-per-use, recurring</td>
 <td>One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. Pay-per-use is intended for continuous usage and price set is for each successful usage action. Recurrring is intended for continuous time period plans</td>
+</tr>
+<tr>
+<td><strong>maxQuantity</strong> <strong>*</strong></td>
+<td>Integer</td>
+<td>-</td>
+<td>The maximum transaction count for the period. Use this to define for example monthly (or any other period) request limit to the data product</td>
 </tr>
 <tr>
 <td></td>
