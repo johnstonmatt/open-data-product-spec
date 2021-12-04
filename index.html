@@ -354,6 +354,14 @@
           </li>
           <li>
             <a href="#provider" class="toc-h1 toc-link" data-title="Provider">Provider</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#mandatory-attributes-and-elements" class="toc-h2 toc-link" data-title="Mandatory attributes and elements">Mandatory attributes and elements</a>
+                  </li>
+                  <li>
+                    <a href="#optional-attributes-and-elements" class="toc-h2 toc-link" data-title="Optional attributes and elements">Optional attributes and elements</a>
+                  </li>
+              </ul>
           </li>
           <li>
             <a href="#hello-world-example" class="toc-h1 toc-link" data-title="Hello world example">Hello world example</a>
@@ -414,6 +422,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
   <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0.1</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">category</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">logo</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png</span><span class="dl">"</span>
 <span class="p">}</span>
 
@@ -667,28 +676,107 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </blockquote>
 <div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="p">.....</span>
 </code></pre></div><h1 id='provider'>Provider</h1>
-<p>Provider component.....</p>
+<p>Provider <strong>ELEMENT</strong> describes the Organization legally allowed to create, develop and publish data products. The provider might not be the original IPR owner of the data used, but has rights operate with it. The contract or other agreement between Provider and possible data owner is not part of the standard as metadata or licence wise.</p>
+
+<p>Mandatory attributes are listed in separate table and marked with <strong>bolded names</strong> and asterix <strong>*</strong>. Next to the mandatory attributes is an example. </p>
+
+<p>The same logic applies to the optional attributes as well. Optional attributes are listed in own table and an example is given in the right column. </p>
 
 <blockquote>
-<p>Example of Provider component usage:</p>
+<p>Example of Provider component mandatory attributes usage:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">Provider</span><span class="dl">"</span><span class="p">:</span>
       <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">MindMote Oy</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">business-id</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">12243434-12</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">legalName</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">MindMote Oy</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">businessId</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">12243434-12</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">email</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">contact@mindmote.fi</span><span class="dl">"</span>
+      <span class="p">}</span>
+
+</code></pre></div><h2 id='mandatory-attributes-and-elements'>Mandatory attributes and elements</h2>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>legalName</strong> <strong>*</strong></td>
+<td>string</td>
+<td>text content, max length 256 chars</td>
+<td>The official name of the organization, e.g. the registered company name.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>businessID</strong> <strong>*</strong></td>
+<td>string</td>
+<td>-</td>
+<td>The business identifier code of the company. Often this is given to the company by authorized public sector organization managing register of businesses.</td>
+</tr>
+<tr>
+<td><strong>email</strong> <strong>*</strong></td>
+<td>string</td>
+<td>-</td>
+<td>Email to be used in contacting the organization.</td>
+</tr>
+</tbody></table>
+<h2 id='optional-attributes-and-elements'>Optional attributes and elements</h2>
+<blockquote>
+<p>Example of Provider component with some of the voluntary attributes:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">Provider</span><span class="dl">"</span><span class="p">:</span>
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">taxID</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">12243434-12</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">vatID</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">12243434-12</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">logoURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://mindmote.fi/logo.png</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Digital Economy services and tools</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://mindmote.fi</span><span class="dl">"</span>
-         <span class="dl">"</span><span class="s2">phone</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">+35845 0232 2323</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">email</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">contact@mindmote.fi</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">telephone</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">+35845 0232 2323</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">streetAddress</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Koulukatu 1</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">zipCode</span><span class="dl">"</span><span class="p">:</span><span class="mi">33100</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">county</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Pirkanmaa</span><span class="dl">"</span>
-         <span class="dl">"</span><span class="s2">city</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Tampere</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">country</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Finland</span><span class="dl">"</span>
+         <span class="dl">"</span><span class="s2">postalCode</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">33100</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">addressRegion</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Pirkanmaa</span><span class="dl">"</span>
+         <span class="dl">"</span><span class="s2">addressLocality</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Tampere</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">addressCountry</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Finland</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">aggregateRating</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">slogan</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">parentOrganization</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
       <span class="p">}</span>
 
-</code></pre></div><h1 id='hello-world-example'>Hello world example</h1>
+</code></pre></div>
+<table><thead>
+<tr>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>taxID</td>
+<td>string</td>
+<td>-</td>
+<td>The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.</td>
+</tr>
+<tr>
+<td>vatID</td>
+<td>string</td>
+<td>-</td>
+<td>The Value-added Tax ID of the organization or person.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='hello-world-example'>Hello world example</h1>
 <blockquote>
 <p>Example of complete working Data Product specification instance:</p>
 </blockquote>
