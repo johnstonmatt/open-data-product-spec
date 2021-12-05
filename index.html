@@ -742,7 +742,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
          <span class="dl">"</span><span class="s2">vatID</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">12243434-12</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">logoURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://mindmote.fi/logo.png</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Digital Economy services and tools</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://mindmote.fi</span><span class="dl">"</span>
+         <span class="dl">"</span><span class="s2">URL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://mindmote.fi</span><span class="dl">"</span>
          <span class="dl">"</span><span class="s2">telephone</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">+35845 0232 2323</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">streetAddress</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Koulukatu 1</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">postalCode</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">33100</span><span class="dl">"</span><span class="p">,</span>
@@ -750,6 +750,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
          <span class="dl">"</span><span class="s2">addressLocality</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Tampere</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">addressCountry</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Finland</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">aggregateRating</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">ratingCount</span><span class="dl">"</span><span class="p">:</span><span class="mi">1245</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">slogan</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">parentOrganization</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
       <span class="p">}</span>
@@ -776,10 +777,82 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>The Value-added Tax ID of the organization or person.</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>logoURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>The URL pointing to organisation logo</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>Max length 512 chars</td>
+<td>The introduction to the organization. Often contains information of what the organisation does and focuses on.</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>The URL of the organization&#39;s website</td>
+</tr>
+<tr>
+<td>telephone</td>
+<td>string</td>
+<td>-</td>
+<td>The telephone number.</td>
+</tr>
+<tr>
+<td>streetAddress</td>
+<td>string</td>
+<td>-</td>
+<td>The street address. For example, 1600 Amphitheatre Pkwy.</td>
+</tr>
+<tr>
+<td>postalCode</td>
+<td>string</td>
+<td>-</td>
+<td>The postal code. For example, 94043.</td>
+</tr>
+<tr>
+<td>addressRegion</td>
+<td>string</td>
+<td>-</td>
+<td>The region in which the locality is, and which is in the country. For example, California or another appropriate first-level Administrative division</td>
+</tr>
+<tr>
+<td>addressLocality</td>
+<td>string</td>
+<td>-</td>
+<td>The locality in which the street address is, and which is in the region. For example, Mountain View.</td>
+</tr>
+<tr>
+<td>addressCountry</td>
+<td>string</td>
+<td>two-letter ISO 3166-1 alpha-2 country code</td>
+<td>The country.</td>
+</tr>
+<tr>
+<td>aggregateRating</td>
+<td>string</td>
+<td>-</td>
+<td>The average rating based on multiple ratings or reviews.</td>
+</tr>
+<tr>
+<td>ratingCount</td>
+<td>integer</td>
+<td>-</td>
+<td>The amount of ratigns and reviews used in calculating the aggregateRating.</td>
+</tr>
+<tr>
+<td>slogan</td>
+<td>string</td>
+<td>Max length 256 chars</td>
+<td>The slogan of the organization. This is often related to showing the brand</td>
+</tr>
+<tr>
+<td>parentOrganization</td>
+<td>string</td>
+<td>-</td>
+<td>The larger organization that this organization is a subOrganization of, if any.</td>
 </tr>
 </tbody></table>
 
