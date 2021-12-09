@@ -735,10 +735,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
             <span class="dl">"</span><span class="s2">twitterURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
          <span class="p">}</span>
       <span class="p">}</span>
-      <span class="dl">"</span><span class="s2">monitoring</span><span class="dl">"</span><span class="p">:</span>
+      <span class="dl">"</span><span class="s2">observability</span><span class="dl">"</span><span class="p">:</span>
       <span class="p">{</span>
-
-      <span class="p">}</span>   
+         <span class="dl">"</span><span class="s2">logsURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://logs.com</span><span class="dl">"</span>
+         <span class="dl">"</span><span class="s2">dashboardURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://dashboard.com</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">uptimeURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://uptime.com</span><span class="dl">"</span>
+      <span class="p">}</span> 
    <span class="p">}</span>
 </code></pre></div>
 <table><thead>
@@ -864,10 +866,28 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>URL to the Twitter account for which product related support requests can be raised</td>
 </tr>
 <tr>
-<td>monitoring</td>
-<td>Element</td>
+<td>observability</td>
+<td>element</td>
 <td>-</td>
-<td>Element containing product monitoring related information. One of the common monitoring services used by consumers is uptime information providing application.</td>
+<td>Observability is a superset of monitoring. It provides not only high-level overviews of the system’s health but also highly granular insights into the implicit failure modes of the system. In addition, an observable system furnishes ample context about its inner workings, unlocking the ability to uncover deeper, systemic issues.</td>
+</tr>
+<tr>
+<td>logsURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>URL to service which offers access to event logs including errors, response times, call information.</td>
+</tr>
+<tr>
+<td>dashboardURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>URL to dashboard application which visualizes product behaviour. This service should support at least part of the given product quality indicators</td>
+</tr>
+<tr>
+<td>uptimeURL</td>
+<td>URL</td>
+<td>Valid URL</td>
+<td>URL to service which shows uptime statistics as well as other statistical information. This service should support at least part of the given product quality indicators</td>
 </tr>
 </tbody></table>
 
