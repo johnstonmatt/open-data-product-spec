@@ -434,6 +434,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </blockquote>
 <div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
   <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
@@ -462,6 +463,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>string</td>
 <td>max length 256 chars</td>
 <td>The name of the product.</td>
+</tr>
+<tr>
+<td><strong>productID</strong> <strong>*</strong></td>
+<td>string</td>
+<td>max length 256 chars</td>
+<td>Product identifier.</td>
 </tr>
 <tr>
 <td><strong>description</strong> <strong>*</strong></td>
