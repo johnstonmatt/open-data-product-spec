@@ -347,7 +347,7 @@
             <a href="#data-pipeline" class="toc-h1 toc-link" data-title="Data Pipeline">Data Pipeline</a>
           </li>
           <li>
-            <a href="#quality" class="toc-h1 toc-link" data-title="Quality">Quality</a>
+            <a href="#service-level-agreement" class="toc-h1 toc-link" data-title="Service Level Agreement">Service Level Agreement</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#optional-attributes-and-elements" class="toc-h2 toc-link" data-title="Optional attributes and elements">Optional attributes and elements</a>
@@ -681,7 +681,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <p>Example of Pipeline component usage:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="p">.....</span>
-</code></pre></div><h1 id='quality'>Quality</h1>
+</code></pre></div><h1 id='service-level-agreement'>Service Level Agreement</h1>
 <p>Quality ELEMENT contains attributes which define the desired and promised quality of the data product. </p>
 
 <p>No mandatory attributes at the moment. Optional attributes are listed in own table and an example is given in the right column. </p>
@@ -705,6 +705,28 @@ The JSON examples are not based on any real data product, but exemplify the usag
          <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">milliseconds</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mi">200</span>
       <span class="p">}</span>
+      <span class="dl">"</span><span class="s2">support</span><span class="dl">"</span><span class="p">:</span> 
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">company</span><span class="dl">"</span><span class="p">:</span> 
+         <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">phonenumber</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">email</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">documentationURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">guidesURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
+         <span class="p">},</span>
+         <span class="dl">"</span><span class="s2">community</span><span class="dl">"</span><span class="p">:</span> 
+         <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">stackoverflowURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">forumURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span> 
+            <span class="dl">"</span><span class="s2">facebookURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span> 
+            <span class="dl">"</span><span class="s2">slackURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">twitterURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
+         <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="dl">"</span><span class="s2">monitoring</span><span class="dl">"</span><span class="p">:</span>
+      <span class="p">{</span>
+
+      <span class="p">}</span>   
    <span class="p">}</span>
 </code></pre></div>
 <table><thead>
