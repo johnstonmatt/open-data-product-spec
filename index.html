@@ -689,52 +689,52 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <blockquote>
 <p>Example of Quality component usage:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">SLA: {
-      </span><span class="dl">"</span><span class="nx">updateFrequency</span><span class="dl">"</span><span class="s2">: 
-      {
-         </span><span class="dl">"</span><span class="nx">unit</span><span class="dl">"</span><span class="s2">: </span><span class="dl">"</span><span class="nx">hours</span><span class="dl">"</span><span class="s2">,
-         </span><span class="dl">"</span><span class="nx">value</span><span class="dl">"</span><span class="s2">: 1
-      },
-      </span><span class="dl">"</span><span class="nx">uptime</span><span class="dl">"</span><span class="s2">: 
-      {
-         </span><span class="dl">"</span><span class="nx">unit</span><span class="dl">"</span><span class="s2">: </span><span class="dl">"</span><span class="nx">percentage</span><span class="dl">"</span><span class="s2">,
-         </span><span class="dl">"</span><span class="nx">value</span><span class="dl">"</span><span class="s2">: 99
-      },
-      </span><span class="dl">"</span><span class="nx">responseTime</span><span class="dl">"</span><span class="s2">: 
-      {
-         </span><span class="dl">"</span><span class="nx">unit</span><span class="dl">"</span><span class="s2">: </span><span class="dl">"</span><span class="nx">milliseconds</span><span class="dl">"</span><span class="s2">,
-         </span><span class="dl">"</span><span class="nx">value</span><span class="dl">"</span><span class="s2">: 200
-      }
-      </span><span class="dl">"</span><span class="nx">support</span><span class="dl">"</span><span class="s2">: 
-      {
-         </span><span class="dl">"</span><span class="nx">company</span><span class="dl">"</span><span class="s2">: 
-         {
-            </span><span class="dl">"</span><span class="nx">phoneNumber</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
-            </span><span class="dl">"</span><span class="nx">phoneServiceHours</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">
-            </span><span class="dl">"</span><span class="nx">chatURL</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
-            </span><span class="dl">"</span><span class="nx">chatServiceHours</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
-            </span><span class="dl">"</span><span class="nx">chatResponseTime</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
-            </span><span class="dl">"</span><span class="nx">email</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
-            </span><span class="dl">"</span><span class="nx">emailServiceHours</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
-            </span><span class="dl">"</span><span class="nx">emailResponseTime</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
-            </span><span class="dl">"</span><span class="nx">documentationURL</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
-            </span><span class="dl">"</span><span class="nx">guidesURL</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
-         },
-         </span><span class="dl">"</span><span class="nx">community</span><span class="dl">"</span><span class="s2">: 
-         {
-            </span><span class="dl">"</span><span class="nx">stackoverflowURL</span><span class="dl">"</span><span class="s2">: </span><span class="dl">""</span><span class="s2">,
-            </span><span class="dl">"</span><span class="nx">forumURL</span><span class="dl">"</span><span class="s2">: </span><span class="dl">""</span><span class="s2"> 
-            </span><span class="dl">"</span><span class="nx">facebookURL</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">, 
-            </span><span class="dl">"</span><span class="nx">slackURL</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
-            </span><span class="dl">"</span><span class="nx">twitterURL</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">
-         }
-      }
-      </span><span class="dl">"</span><span class="nx">monitoring</span><span class="dl">"</span><span class="s2">:
-      {
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">SLA</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">updateFrequency</span><span class="dl">"</span><span class="p">:</span> 
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">hours</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">uptime</span><span class="dl">"</span><span class="p">:</span> 
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">percentage</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mi">99</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">responseTime</span><span class="dl">"</span><span class="p">:</span> 
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">unit</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">milliseconds</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="mi">200</span>
+      <span class="p">}</span>
+      <span class="dl">"</span><span class="s2">support</span><span class="dl">"</span><span class="p">:</span> 
+      <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">company</span><span class="dl">"</span><span class="p">:</span> 
+         <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">phoneNumber</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">phoneServiceHours</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
+            <span class="dl">"</span><span class="s2">chatURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">chatServiceHours</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">chatResponseTime</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">email</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">emailServiceHours</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">emailResponseTime</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">documentationURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">guidesURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+         <span class="p">},</span>
+         <span class="dl">"</span><span class="s2">community</span><span class="dl">"</span><span class="p">:</span> 
+         <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">stackoverflowURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">forumURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span> 
+            <span class="dl">"</span><span class="s2">facebookURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span> 
+            <span class="dl">"</span><span class="s2">slackURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">twitterURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
+         <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="dl">"</span><span class="s2">monitoring</span><span class="dl">"</span><span class="p">:</span>
+      <span class="p">{</span>
 
-      }   
-   }
-</span></code></pre></div>
+      <span class="p">}</span>   
+   <span class="p">}</span>
+</code></pre></div>
 <table><thead>
 <tr>
 <th><div style="width:150px">Element name</div></th>
