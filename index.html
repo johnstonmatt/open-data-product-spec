@@ -709,10 +709,16 @@ The JSON examples are not based on any real data product, but exemplify the usag
       <span class="p">{</span>
          <span class="dl">"</span><span class="s2">company</span><span class="dl">"</span><span class="p">:</span> 
          <span class="p">{</span>
-            <span class="dl">"</span><span class="s2">phonenumber</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">email</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">phoneNumber</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">phoneServiceHours</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
+            <span class="dl">"</span><span class="s2">chatURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">chatServiceHours</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">chatResponseTime:</span><span class="dl">""</span><span class="s2">,
+            </span><span class="dl">"</span><span class="nx">email</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
+            </span><span class="dl">"</span><span class="nx">emailServiceHours</span><span class="dl">"</span><span class="s2">:</span><span class="dl">""</span><span class="s2">,
+            </span><span class="dl">"</span><span class="nx">emailResponseTime</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
             <span class="dl">"</span><span class="s2">documentationURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
-            <span class="dl">"</span><span class="s2">guidesURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
+            <span class="dl">"</span><span class="s2">guidesURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
          <span class="p">},</span>
          <span class="dl">"</span><span class="s2">community</span><span class="dl">"</span><span class="p">:</span> 
          <span class="p">{</span>
@@ -740,8 +746,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <tr>
 <td>updateFrequency</td>
 <td>element</td>
-<td>options for <em>unit</em> are: milliseconds, seconds, minutes, days, weeks, months, years, never, null.</td>
-<td>name of the quality attribute indicating the timely interval how often data is updated. <em>Value</em> attribute is Integer.</td>
+<td>options for <em>unit</em> are: milliseconds, seconds, minutes, days, weeks, months, years, never, null. <em>Value</em> attribute is Integer.</td>
+<td>name of the quality attribute indicating the timely interval how often data is updated.</td>
 </tr>
 <tr>
 <td>uptime</td>
@@ -754,6 +760,30 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>element</td>
 <td>unit options are: milliseconds, seconds, null. Value can be integer or null</td>
 <td>Response time is the total amount of time it takes to respond to a request for service.</td>
+</tr>
+<tr>
+<td>support</td>
+<td>element</td>
+<td>-</td>
+<td>Support element describes how the customer can reach for help in case of difficulties in usage, billing, or otherwise. Support can be based on company provided support and community driven support.</td>
+</tr>
+<tr>
+<td>phoneNumber</td>
+<td>string</td>
+<td>-</td>
+<td>The support phone number</td>
+</tr>
+<tr>
+<td>phoneServiceHours</td>
+<td>string</td>
+<td>-</td>
+<td>Describes the service hours company provides. Contains information often in week level eg Mon-Fri at 8am - 4pm</td>
+</tr>
+<tr>
+<td>chatURL</td>
+<td>URL</td>
+<td>-</td>
+<td>The URL of chat service to use. Service hours and response time defined in other attributes.</td>
 </tr>
 </tbody></table>
 
