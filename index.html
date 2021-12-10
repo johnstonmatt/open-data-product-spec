@@ -395,8 +395,6 @@
 <li>enable creation of automated data product deployment with standard methods (DataOps)</li>
 </ul>
 
-<p>Just like Data Product in Data Mesh concept, Open Data Product dessribes..... self-sovereign </p>
-
 <p><strong>Note!</strong> In the &quot;Open Data Product&quot; focus is on the latter words and the prefix &#39;open&#39; refers to openness of the standard. Any kind of connotations to open data (different thing) are not intentional, intended or desirable. </p>
 
 <p>This is work in progress. If you see something missing, described inaccurately or plain wrong, or you want to comment the specification, click the button below and proceed forward. </p>
@@ -406,7 +404,7 @@
 <p>As a strategic resource for companies, data is considered an asset that, like any other material good, has a financial
 value and whose management generates costs. Data created, collected or used in individual business processes can be sold to other organisations as raw or processed data, so that it no longer serves as an enabler of products, but is the product itself. This leads to the paradigm that data assets can be monetised by exchanging and trading data between organisations as data products and services. </p>
 
-<p>There are multiple definitions for data product, but in this specification we adopt Simon O&#39;Regan&#39;s definition as <em>a product whose primary objective is to use data to facilitate and end goal</em>. </p>
+<p>There are multiple definitions for data product. In an <a href="https://arxiv.org/abs/2009.04462">article authored by Jian Pei (2020)</a>, data products &quot;<em>refer to data sets as products and information services derived from data sets.</em>&quot; Simon O&#39;Regan&#39;s defines data product as <em>a product whose primary objective is to use data to facilitate and end goal</em>. From the academic literature we have found several subtypes of data products: raw data, derived data, data sets, reports, analytic views, 3D visualisations, algorithms, decision support and automated decision-making. </p>
 
 <p>While many of the standard Product Development Rules apply — solve a customer need, learn from feedback, prioritise relentlessly, etc. — data has different characteristics compared to tangible products that prevent the direct transfer of established processes and rules of trading goods, especially in terms of pricing mechanisms.</p>
 
@@ -457,7 +455,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
   <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0.1</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">category</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">category</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">pets</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">logo</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png</span><span class="dl">"</span>
 <span class="p">}</span>
 
@@ -511,6 +510,12 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>string</td>
 <td>The versioning scheme is <strong>major.minor.</strong>. Examples: 1.0, 2.1, 3.15</td>
 <td>The version of the product.</td>
+</tr>
+<tr>
+<td><strong>type</strong> <strong>*</strong></td>
+<td>one of</td>
+<td>Options: raw data, derived data, dataset, reports, analytic view, 3D visualisation, algorithm, decision support, automated decision-making, bi-directional</td>
+<td>The type of the product. Options are derived from examples and lists found from academic literature</td>
 </tr>
 <tr>
 <td><strong>logo</strong> <strong>*</strong></td>
