@@ -372,6 +372,14 @@
               </ul>
           </li>
           <li>
+            <a href="#schemas" class="toc-h1 toc-link" data-title="Schemas">Schemas</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#properties-of-inline-schemas" class="toc-h2 toc-link" data-title="Properties of inline schemas">Properties of inline schemas</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#specification-extensions" class="toc-h1 toc-link" data-title="Specification extensions">Specification extensions</a>
           </li>
           <li>
@@ -1118,6 +1126,68 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </tbody></table>
 
 <p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
+<h1 id='schemas'>Schemas</h1>
+<p>The Schema Object allows the definition of input and output data types. These types can be objects, but also primitives and arrays. For more information about the properties, see <a href="https://tools.ietf.org/html/draft-wright-json-schema-00">JSON Schema Core</a> and <a href="https://tools.ietf.org/html/draft-wright-json-schema-validation-00">JSON Schema Validation</a>. Unless stated otherwise, the property definitions follow the JSON Schema.</p>
+
+<p>The schemas can be defined as referenced (URL or local file systen path). In the future versions specification it is likely that support for inline schemas is added. This object is intended to be used with API accessed data products. The Schemas contain elements for payload and query separately.</p>
+
+<blockquote>
+<p>Example of Schemas object usage:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">Schemas</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">group</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">query</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">ref</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">schemaURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://myschemas.org/objects/query.json</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">documentation</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
+         <span class="p">}</span>
+         <span class="dl">"</span><span class="s2">responsePayload</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">ref</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">schemaURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://myschemas.org/objects/payload.json</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">documentation</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
+         <span class="p">}</span>
+      <span class="p">}</span>
+   <span class="p">}</span>
+
+</code></pre></div><h3 id='properties-of-inline-schemas'>Properties of inline schemas</h3>
+<p>The following properties are taken directly from the JSON Schema definition and follow the same specifications:</p>
+
+<ul>
+<li>title</li>
+<li>multipleOf</li>
+<li>maximum</li>
+<li>exclusiveMaximum</li>
+<li>minimum</li>
+<li>exclusiveMinimum</li>
+<li>maxLength</li>
+<li>minLength</li>
+<li>pattern (This string SHOULD be a valid regular expression, according to the Ecma-262 Edition 5.1 regular expression dialect)</li>
+<li>maxItems</li>
+<li>minItems</li>
+<li>uniqueItems</li>
+<li>maxProperties</li>
+<li>minProperties</li>
+<li>required</li>
+<li>enum</li>
+</ul>
+
+<p>The following properties are taken from the JSON Schema definition but their definitions were adjusted to the Open Data Pooduct Specification.</p>
+
+<ul>
+<li>type - Value MUST be a string. Multiple types via an array are not supported.</li>
+<li>allOf - Inline or referenced schema MUST be of a Schema Object and not a standard JSON Schema.</li>
+<li>oneOf - Inline or referenced schema MUST be of a Schema Object and not a standard JSON Schema.</li>
+<li>anyOf - Inline or referenced schema MUST be of a Schema Object and not a standard JSON Schema.</li>
+<li>not - Inline or referenced schema MUST be of a Schema Object and not a standard JSON Schema.</li>
+<li>items - Value MUST be an object and not an array. Inline or referenced schema MUST be of a Schema Object and not a standard JSON Schema. items MUST be present if the type is array.</li>
+<li>properties - Property definitions MUST be a Schema Object and not a standard JSON Schema (inline or referenced).</li>
+<li>additionalProperties - Value can be boolean or object. Inline or referenced schema MUST be of a Schema Object and not a standard JSON Schema. Consistent with JSON Schema, additionalProperties defaults to true.</li>
+<li>description - CommonMark syntax MAY be used for rich text representation.</li>
+<li>format - See Data Type Formats for further details. While relying on JSON Schema&#39;s defined formats, the Open Data Product Specification offers a few additional predefined formats.</li>
+<li>default - The default value represents what would be assumed by the consumer of the input as the value of the schema if one is not provided. Unlike JSON Schema, the value MUST conform to the defined type for the Schema Object defined at the same level. For example, if type is string, then default can be &quot;foo&quot; but cannot be 1.</li>
+</ul>
 <h1 id='specification-extensions'>Specification extensions</h1>
 <p>While the Open Data Product Specification tries to accommodate most use cases, additional data can be added to extend the specification at certain points.</p>
 
