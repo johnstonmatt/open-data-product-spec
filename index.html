@@ -333,6 +333,9 @@
                   <li>
                     <a href="#mandatory-attributes" class="toc-h2 toc-link" data-title="Mandatory attributes">Mandatory attributes</a>
                   </li>
+                  <li>
+                    <a href="#optional-attributes" class="toc-h2 toc-link" data-title="Optional attributes">Optional attributes</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -468,13 +471,9 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
   <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0.1</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">category</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">pets</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">logo</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png</span><span class="dl">"</span>
+  <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span>
 <span class="p">}</span>
 
 </code></pre></div>
@@ -487,12 +486,6 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </tr>
 </thead><tbody>
 <tr>
-<td><strong>valueProposition</strong> <strong>*</strong></td>
-<td>string</td>
-<td>text content, max length 512 chars</td>
-<td>This is the product&#39;s value proposition. Often one or two sentences and crystallizes the value for the customer.</td>
-</tr>
-<tr>
 <td><strong>name</strong> <strong>*</strong></td>
 <td>string</td>
 <td>max length 256 chars</td>
@@ -503,12 +496,6 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>string</td>
 <td>max length 256 chars</td>
 <td>Product identifier.</td>
-</tr>
-<tr>
-<td><strong>description</strong> <strong>*</strong></td>
-<td>string</td>
-<td>-</td>
-<td>The description of the product. Text only.</td>
 </tr>
 <tr>
 <td><strong>visibility</strong> <strong>*</strong></td>
@@ -523,22 +510,73 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>The status of the product. Lifecycle model discussed in details in here (link).</td>
 </tr>
 <tr>
-<td><strong>version</strong> <strong>*</strong></td>
-<td>string</td>
-<td>The versioning scheme is <strong>major.minor.</strong>. Examples: 1.0, 2.1, 3.15</td>
-<td>The version of the product.</td>
-</tr>
-<tr>
 <td><strong>type</strong> <strong>*</strong></td>
 <td>one of</td>
 <td>Options: raw data, derived data, dataset, reports, analytic view, 3D visualisation, algorithm, decision support, automated decision-making, bi-directional</td>
 <td>The type of the product. Options are derived from examples and lists found from academic literature</td>
 </tr>
+</tbody></table>
+<h2 id='optional-attributes'>Optional attributes</h2>
+<blockquote>
+<p>Example of document level attribute usage and structure:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0.1</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">category</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">pets</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">brandSlogan</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">passion for the data monetization</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">logo</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png</span><span class="dl">"</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<table><thead>
 <tr>
-<td><strong>logo</strong> <strong>*</strong></td>
-<td>URL</td>
+<th><div style="width:150px">Element name</div></th>
+<th>Type</th>
+<th>Options</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>valueProposition</td>
+<td>string</td>
+<td>text content, max length 512 chars</td>
+<td>This is the product&#39;s value proposition. Often one or two sentences and crystallizes the value for the customer.</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
 <td>-</td>
+<td>The description of the product. Text only.</td>
+</tr>
+<tr>
+<td>category</td>
+<td>array</td>
+<td>-</td>
+<td>array of categories</td>
+</tr>
+<tr>
+<td>version</td>
+<td>string</td>
+<td>The versioning scheme is <strong>major.minor.</strong>. Examples: 1.0, 2.1, 3.15</td>
+<td>The version of the product.</td>
+</tr>
+<tr>
+<td>logo</td>
+<td>URL</td>
+<td>Valid URL</td>
 <td>URL of the logo. See more from <a href="https://en.wikipedia.org/wiki/URL">wikipedia</a>.</td>
+</tr>
+<tr>
+<td>brandSlogan</td>
+<td>string</td>
+<td>-</td>
+<td>Brand related slogan like Nike has <em>just do it</em></td>
 </tr>
 </tbody></table>
 
@@ -658,7 +696,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
          <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">minPrice</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">maxPrice</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">15.000</span><span class="dl">"</span>
-         <span class="dl">"</span><span class="s2">exceedingTransactionCost</span><span class="dl">"</span><span class="p">:</span><span class="mf">0.02</span>
+         <span class="dl">"</span><span class="s2">additionalPrice</span><span class="dl">"</span><span class="p">:</span><span class="mf">0.02</span>
       <span class="p">},</span>
       <span class="p">{</span>
          <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium Package</span><span class="dl">"</span><span class="p">,</span>
