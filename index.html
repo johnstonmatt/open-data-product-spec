@@ -753,15 +753,15 @@ The JSON examples are not based on any real data product, but exemplify the usag
     <span class="dl">"</span><span class="s2">composer</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">helm</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">format</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">yaml</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">development</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">scriptURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/test/runDataPipeline.yml</span><span class="dl">"</span>
-    <span class="dl">"</span><span class="s2">documentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/test/docs/DocsDataPipeline.html</span><span class="dl">"</span>
+    <span class="dl">"</span><span class="s2">scriptURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/test/runDataPipeline.yml</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">deploymentDocumentationURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://192.168.10.1/test/docs/DocsDataPipeline.html</span><span class="dl">"</span>
   <span class="p">},</span> 
-  <span class="dl">"</span><span class="s2">dataAccess</span><span class="dl">"</span><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">dataAccess</span><span class="dl">"</span> <span class="p">{</span>
     <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">API</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">specification</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">OAS</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">format</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">JSON</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">specURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://swagger.com/petstore.json</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">documentationURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span>
+    <span class="dl">"</span><span class="s2">dataAccessDocumentationURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://192.168.10.1/test/docs/dataaccessguide.html</span><span class="dl">"</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
@@ -775,37 +775,23 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <th>Description</th>
 </tr>
 </thead><tbody>
-<tr>
-<td>composer</td>
-<td>string</td>
-<td>any</td>
-<td>A name of the package manager, composer or tool</td>
-</tr>
-<tr>
-<td>format</td>
-<td>string</td>
-<td>any</td>
-<td>Type of script language</td>
-</tr>
-<tr>
-<td>status</td>
-<td>string</td>
-<td>Options for unit are: announcement, draft, development, testing, acceptance, production, sunset, retired</td>
-<td></td>
-</tr>
-<tr>
-<td>DeploymentScriptURL</td>
-<td>URL</td>
-<td>Valid URL</td>
-<td>The URL of the deployment script.</td>
-</tr>
-<tr>
-<td>DeploymentDocumentationURL</td>
-<td>URL</td>
-<td>Valid URL</td>
-<td>The URL of the deployment documentation</td>
-</tr>
 </tbody></table>
+
+<p>Infrastructure</p>
+
+<p>| composer | string | any | A name of the package manager, composer or tool |
+| format | string  | any |  Type of script language|
+| status | string  | Options for unit are: announcement, draft, development, testing, acceptance, production, sunset, retired |
+| scriptURL | URL | Valid URL  |    The URL of the deployment script. |
+| deploymentDocumentationURL | URL | Valid URL  |   The URL of the deployment documentation |</p>
+
+<p>Data Access</p>
+
+<p>| type | string | any  |    Type of data access |
+| specification | string | any  |   type of the data access specification |
+| format | string | any  |  file format |
+| specsURL | URL | Valid URL  |     The URL of the specification |
+| dataAccessDocumentationURL | URL | Valid URL  |   The URL of the data access documentation |</p>
 <h1 id='service-level-agreement'>Service Level Agreement</h1>
 <p>Quality ELEMENT contains attributes which define the desired and promised quality of the data product. </p>
 
