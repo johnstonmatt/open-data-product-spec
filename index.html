@@ -319,10 +319,7 @@
                     <a href="#version-0-6" class="toc-h2 toc-link" data-title="Version 0.6">Version 0.6</a>
                   </li>
                   <li>
-                    <a href="#purpose" class="toc-h2 toc-link" data-title="Purpose">Purpose</a>
-                  </li>
-                  <li>
-                    <a href="#specification-aims" class="toc-h2 toc-link" data-title="Specification aims">Specification aims</a>
+                    <a href="#introduction" class="toc-h2 toc-link" data-title="Introduction">Introduction</a>
                   </li>
                   <li>
                     <a href="#document-structure" class="toc-h2 toc-link" data-title="Document structure">Document structure</a>
@@ -406,9 +403,11 @@
 <p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here.</p>
 
 <p>The specification is shared under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license. </p>
-<h2 id='purpose'>Purpose</h2>
+<h2 id='introduction'>Introduction</h2>
 <p>Technical specification of a machine-readable data product metadata model. It defines the objects and attributes as well as the structure of digital data products. The work is based on existing standards (schema.org), best practices and emerging concepts like Data Mesh. The reasoning is that we reuse and proudly copy instead of reinventing the wheel. </p>
-<h2 id='specification-aims'>Specification aims</h2>
+
+<p><strong>Specification aims:</strong></p>
+
 <ul>
 <li>enable interoperability between organizations, data platforms,  marketplaces, and tools. </li>
 <li>reduce data product metadata conversions and errors between systems and organizations, </li>
@@ -450,7 +449,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 
 </aside>
 <h1 id='document-level-attributes'>Document level attributes</h1>
-<p>Here&#39;s the list of attributes which can occur at the document root level. Mandatory attributes are listed in separate table and marked with <strong>bolded names</strong> and asterix <strong>*</strong>. Next to the mandatory attributes is an example. The same logic applies to the optional attributes as well. Optional attributes are listed in own table and examples are given on the right column. </p>
+<p>Here&#39;s the list of attributes which can occur at the document root level. In the following description, if a field is not explicitly <strong>REQUIRED</strong> or described with a MUST or SHALL, it can be considered OPTIONAL. Optional attributes are listed in own table and examples are given on the right column. </p>
 <h2 id='mandatory-attributes'>Mandatory attributes</h2>
 <blockquote>
 <p>Example of document level attribute usage and structure:</p>
@@ -473,34 +472,52 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </tr>
 </thead><tbody>
 <tr>
-<td><strong>name</strong> <strong>*</strong></td>
+<td><strong>name</strong></td>
+<td>string</td>
+<td>max length 256 chars</td>
+<td><strong>REQUIRED</strong>The name of the product.</td>
+</tr>
+<tr>
+<td><strong>productID</strong> <strong>REQUIRED</strong></td>
+<td>string</td>
+<td>max length 256 chars</td>
+<td><strong>REQUIRED</strong> Product identifier.</td>
+</tr>
+<tr>
+<td><strong>name</strong> <strong>REQUIRED</strong></td>
+<td>string</td>
+<td>max length 256 chars</td>
+<td><strong>REQUIRED</strong> The name of the product.</td>
+</tr>
+<tr>
+<td><strong>visibility</strong></td>
+<td>one of</td>
+<td>one of: private, organisation, public</td>
+<td><strong>REQUIRED</strong> The publicity level eg who can see this product. Private - just the creator. Organisation - visible to all in your organisation. Public - visible to all publicly</td>
+</tr>
+<tr>
+<td><strong>name</strong></td>
+<td>string</td>
+<td>max length 256 chars</td>
+<td><strong>REQUIRED</strong> The name of the product.</td>
+</tr>
+<tr>
+<td><strong>status</strong></td>
+<td>one of</td>
+<td>one of: announcement, draft, development, testing, acceptance, production, sunset, retired</td>
+<td><strong>REQUIRED</strong> The status of the product. Lifecycle model discussed in details in here (link).</td>
+</tr>
+<tr>
+<td><strong>name</strong></td>
 <td>string</td>
 <td>max length 256 chars</td>
 <td>The name of the product.</td>
 </tr>
 <tr>
-<td><strong>productID</strong> <strong>*</strong></td>
-<td>string</td>
-<td>max length 256 chars</td>
-<td>Product identifier.</td>
-</tr>
-<tr>
-<td><strong>visibility</strong> <strong>*</strong></td>
-<td>one of</td>
-<td>one of: private, organisation, public</td>
-<td>The publicity level eg who can see this product. Private - just the creator. Organisation - visible to all in your organisation. Public - visible to all publicly</td>
-</tr>
-<tr>
-<td><strong>status</strong> <strong>*</strong></td>
-<td>one of</td>
-<td>one of: announcement, draft, development, testing, acceptance, production, sunset, retired</td>
-<td>The status of the product. Lifecycle model discussed in details in here (link).</td>
-</tr>
-<tr>
-<td><strong>type</strong> <strong>*</strong></td>
+<td><strong>type</strong></td>
 <td>one of</td>
 <td>Options: raw data, derived data, dataset, reports, analytic view, 3D visualisation, algorithm, decision support, automated decision-making, bi-directional</td>
-<td>The type of the product. Options are derived from examples and lists found from academic literature</td>
+<td><strong>REQUIRED</strong> The type of the product. Options are derived from examples and lists found from academic literature</td>
 </tr>
 </tbody></table>
 <h2 id='optional-attributes'>Optional attributes</h2>
@@ -631,40 +648,52 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </tr>
 </thead><tbody>
 <tr>
-<td><strong>name</strong> <strong>*</strong></td>
+<td><strong>name</strong></td>
+<td>string</td>
+<td>max length 256 chars</td>
+<td><strong>REQUIRED</strong> The name of the product.</td>
+</tr>
+<tr>
+<td><strong>name</strong></td>
 <td>string</td>
 <td>text content, max length 256 chars</td>
-<td>Attribute is the name of the data product.</td>
+<td><strong>REQUIRED</strong> Attribute is the name of the data product.</td>
 </tr>
 <tr>
-<td><strong>priceCurrency</strong> <strong>*</strong></td>
+<td><strong>name</strong></td>
+<td>string</td>
+<td>max length 256 chars</td>
+<td><strong>REQUIRED</strong> The name of the product.</td>
+</tr>
+<tr>
+<td><strong>priceCurrency</strong></td>
 <td>string</td>
 <td>Use standard formats: <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> currency format e.g. &quot;USD&quot;; Ticker symbol for cryptocurrencies e.g. &quot;BTC&quot;</td>
-<td>The primary currency used in pricing. Platforms are assumed to use this as primary currency if currency conversions are used to display product pricing in different locations for various currencies</td>
+<td><strong>REQUIRED</strong> The primary currency used in pricing. Platforms are assumed to use this as primary currency if currency conversions are used to display product pricing in different locations for various currencies</td>
 </tr>
 <tr>
-<td><strong>price</strong> <strong>*</strong></td>
+<td><strong>price</strong></td>
 <td>string</td>
 <td>-</td>
-<td>The offer price of a product, or of a price component. Use &#39;.&#39; (Unicode &#39;FULL STOP&#39; (U+002E)) rather than &#39;,&#39; to indicate a decimal point. Avoid using these symbols as a readability separator. Use values from 0123456789 (Unicode &#39;DIGIT ZERO&#39; (U+0030) to &#39;DIGIT NINE&#39; (U+0039)) rather than superficially similiar Unicode symbols.</td>
+<td><strong>REQUIRED</strong> The offer price of a product, or of a price component. Use &#39;.&#39; (Unicode &#39;FULL STOP&#39; (U+002E)) rather than &#39;,&#39; to indicate a decimal point. Avoid using these symbols as a readability separator. Use values from 0123456789 (Unicode &#39;DIGIT ZERO&#39; (U+0030) to &#39;DIGIT NINE&#39; (U+0039)) rather than superficially similiar Unicode symbols.</td>
 </tr>
 <tr>
-<td><strong>billingDuration</strong> <strong>*</strong></td>
-<td>Duration</td>
-<td>instant, day, week, month, year</td>
-<td>Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan.</td>
+<td><strong>billingDuration</strong></td>
+<td>string</td>
+<td>options: instant, day, week, month, year</td>
+<td><strong>REQUIRED</strong> Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan.</td>
 </tr>
 <tr>
-<td><strong>unit</strong> <strong>*</strong></td>
+<td><strong>unit</strong></td>
 <td>string</td>
 <td>one-time-payment, pay-per-use, recurring</td>
-<td>One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. Pay-per-use is intended for continuous usage and price set is for each successful usage action. Recurrring is intended for continuous time period plans</td>
+<td><strong>REQUIRED</strong> One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. Pay-per-use is intended for continuous usage and price set is for each successful usage action. Recurrring is intended for continuous time period plans</td>
 </tr>
 <tr>
-<td><strong>maxTransactionQuantity</strong> <strong>*</strong></td>
+<td><strong>maxTransactionQuantity</strong></td>
 <td>string</td>
 <td>either &quot;unlimited&quot; or a number (Integer)</td>
-<td>The maximum transaction quantity for the given billing duration. Use this to define for example monthly (or any other period) request limit to the data product</td>
+<td><strong>REQUIRED</strong> The maximum transaction quantity for the given billing duration. Use this to define for example monthly (or any other period) request limit to the data product</td>
 </tr>
 <tr>
 <td></td>
