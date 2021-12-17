@@ -24,7 +24,6 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
          "resellingRight": true,
          "roalties": "It is hereby agreed Data User shall share with Data Holder three percent (3%) of the revenues derives and receives from the usage their BI Dashbord solutions by the End Users.",
          "paymentsData User shall remit full payment within thirty (30) days after the end of each calendar month. Taxes (VAT 24 %) are included. Invoice will be electronical",
-         "applicableLaws": "This license shall be interpreted, construed and enforced in accordance with the law of Finland. Copyright: 2021 Mindmote Oy"
             }
    "governance": {
          "containsPersonalData": true,
@@ -33,7 +32,8 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
          "warranties": "The Data User agrees that the following disclaimers apply to its customers and/or other entities.",
          "forceMajeure": "Each party may suspend the fulfilment of its contractual obligations, when the said fulfilment is impossible or objectively too costly due to an unforeseeable impediment independent from the parties, such as for example: strike, boycott, lockout, fire, war (declared or not), civil war, riots and revolutions, requisitions, embargo, power blackouts, extraordinary breakage of machinery, delays in the delivery of components or raw materials.",
          "damages": "During the term of license, except for the force majeure or the Data Holders reasons, Data User is required to follow strictly in accordance with the license. If Data User wants to terminate the license early, it needs to pay a certain amount of liquidated damages.",
-         "confidentiality": "Data User undertakes to maintain confidentiality as regards all information of a technical (such as, by way of a non-limiting example, drawings, tables, documentation, formulas and correspondence) and commercial nature (including contractual conditions, prices, payment conditions) gained during the performance of this license."          
+         "confidentiality": "Data User undertakes to maintain confidentiality as regards all information of a technical (such as, by way of a non-limiting example, drawings, tables, documentation, formulas and correspondence) and commercial nature (including contractual conditions, prices, payment conditions) gained during the performance of this license." 
+         "applicableLaws": "This license shall be interpreted, construed and enforced in accordance with the law of Finland. Copyright: 2021 Mindmote Oy"
    }
   }
 }
@@ -53,7 +53,6 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | modificationRights | boolean | true/false | Data modification rights |
 | resellingRights | boolean | true/false | Reselling rights |
 | royalties | string | text content, max length 512 chars | License royalties |
-| applicableLaws | string | text content, max length 512 chars | Applicable laws i.e intellectual property right |
 | containsPersonalData | boolean | true/false | Data contains personal data |
 | dpaURL| URL| Valid URL | The URL of the data processing agreement |
 | audit | string | text content, max length 512 chars | License auditing |
@@ -61,3 +60,4 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | forceMajeure | string | text content, max length 512 chars | Force Majeure |
 | damages| string | text content, max length 512 chars | Damages refers to the sum of money (i.e. indemnifications) for a breach of some duty or violation of license right. |
 | confidentiality | string | text content, max length 512 chars| Restrictions and requirements imposed on the Data User regarding e.g. the use and disclosure of the Data Holder's confidential information. |
+| applicableLaws | string | text content, max length 512 chars | Applicable laws, i.e local law and intellectual property right |
