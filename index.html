@@ -506,11 +506,11 @@ The JSON examples are not based on any real data product, but exemplify the usag
   <span class="dl">"</span><span class="s2">visibility</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">private</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">version</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">0.1</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">category</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">pets</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">categories</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">pets</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">tags</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">pet</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">brandSlogan</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">passion for the data monetization</span><span class="dl">"</span><span class="p">,</span>
   <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">logo</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png</span><span class="dl">"</span>
+  <span class="dl">"</span><span class="s2">logoURL</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png</span><span class="dl">"</span>
 <span class="p">}</span>
 
 </code></pre></div>
@@ -553,10 +553,10 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>The version of the product.</td>
 </tr>
 <tr>
-<td>logo</td>
+<td>logoURL</td>
 <td>URL</td>
 <td>Valid URL</td>
-<td>URL of the logo. See more from <a href="https://en.wikipedia.org/wiki/URL">wikipedia</a>.</td>
+<td>Valid URL of the logo. See more from <a href="https://datatracker.ietf.org/doc/html/rfc3986">RFC 3986</a>.</td>
 </tr>
 <tr>
 <td>brandSlogan</td>
@@ -581,10 +581,6 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <li>one time payments plans</li>
 <li>pay-as-you-go plans</li>
 </ol>
-
-<!-- 
-<a href="https://v90nkeo0oq0.typeform.com/to/Q1Zo6wE5" target="new"><button class="button-5" role="button">Raise an issue</button></a>
--->
 
 <p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
 <h2 id='mandatory-attributes-and-elements'>Mandatory attributes and elements</h2>
@@ -1230,8 +1226,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <tr>
 <td>logoURL</td>
 <td>URL</td>
-<td>Valid URL</td>
-<td>The URL pointing to organisation logo</td>
+<td>Valid URL. See more from <a href="https://datatracker.ietf.org/doc/html/rfc3986">RFC 3986</a>.</td>
+<td>The URL pointing to organisation logo.</td>
 </tr>
 <tr>
 <td>description</td>
@@ -1242,8 +1238,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <tr>
 <td>URL</td>
 <td>URL</td>
-<td>Valid URL</td>
-<td>The URL of the organization&#39;s website</td>
+<td>Valid URL. See more from <a href="https://datatracker.ietf.org/doc/html/rfc3986">RFC 3986</a>.</td>
+<td>The URL of the organization&#39;s website.</td>
 </tr>
 <tr>
 <td>telephone</td>
