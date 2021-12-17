@@ -42,15 +42,16 @@ The specification is shared under Attribution-ShareAlike 4.0 International (CC B
 
 **Latest version source:**
 
-- https://github.com/Data-Product-Business/open-data-product-spec 
+* https://github.com/Data-Product-Business/open-data-product-spec 
 
 **Editors:**
-- Jarkko Moilanen 
-- Jussi Niilahti 
+* Jarkko Moilanen 
+* Jussi Niilahti 
 
 **Participate:**
-- [Raise an issue in Github](https://github.com/Data-Product-Business/open-data-product-spec/issues)
-- [Raise an issue in service designed for average mortals](https://v90nkeo0oq0.typeform.com/to/Q1Zo6wE5) 
+
+* [Raise an issue in Github](https://github.com/Data-Product-Business/open-data-product-spec/issues)
+* [Raise an issue in service designed for average mortals](https://v90nkeo0oq0.typeform.com/to/Q1Zo6wE5) 
 
 ## Introduction
 
