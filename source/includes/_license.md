@@ -60,4 +60,4 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | forceMajeure | string | text content, max length 512 chars | Force Majeure |
 | damages| string | text content, max length 512 chars | Damages refers to the sum of money (i.e. indemnifications) for a breach of some duty or violation of license right. |
 | confidentiality | string | text content, max length 512 chars| Restrictions and requirements imposed on the Data User regarding e.g. the use and disclosure of the Data Holder's confidential information. |
-| applicableLaws | string | text content, max length 512 chars | Applicable laws, i.e local law and intellectual property right |
+| applicableLaws | string | text content, max length 512 chars | Applicable laws, i.e local law and intellectual property rights |
