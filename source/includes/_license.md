@@ -1,4 +1,4 @@
-# License
+# Data Licensing
 
 The data product may be exploited e.g. by licensing its use and exploitation to third parties. Machine-readable license as part of the specification is implemented for this purpose. It can be used to conclude various agreements regarding data protection, processing and intellectual property rights (IPR). Data can be protected by one or more intellectual property rights. Principle is that when a third party (Data User) exploits the data, it must have a license or other right from Data Holder to exploit to the data.
 
@@ -22,7 +22,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
          ],
          "modificationRight": true,
          "resellingRight": true,
-         "roalties": "It is hereby agreed Data User shall share with Data Holder three percent (3%) of the revenues derives and receives from the usage their BI Dashbord solutions by the End Users.",
+         "royalties": "It is hereby agreed Data User shall share with Data Holder three percent (3%) of the revenues derives and receives from the usage their BI Dashbord solutions by the End Users.",
          "paymentsData User shall remit full payment within thirty (30) days after the end of each calendar month. Taxes (VAT 24 %) are included. Invoice will be electronical",
          "copyrights": "Copyright is regulated in Finland by the Copyright Act (404/1961). Data is property of Mindmote Oy."
             }
