@@ -21,8 +21,6 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
          ],
          "modificationRight": true,
          "resellingRight": true,
-         "royalties": "It is hereby agreed Data User shall share with Data Holder three percent (3%) of the revenues derives and receives from the usage their BI Dashbord solutions by the End Users.",
-         "paymentsData User shall remit full payment within thirty (30) days after the end of each calendar month. Taxes (VAT 24 %) are included. Invoice will be electronical",
             }
    "governance": {
          "containsPersonalData": true,
@@ -42,22 +40,21 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | <div style="width:150px">Element name</div>   | Type  | Options  | Description  |
 |---|---|---|---|
 | scope | element | - |  Extent, range, coverage, area or space of the license |
-| definition | string | text content, max length 512 chars  | Background and purpose of the license |
+| definition | string | Text content, max length 512 chars  | Background and purpose of the license |
 | language | string | ISO 639-1 standard language codes | License language |
 | permanent | boolean | true/false|  License with no expiration date |
-| termitationConditions | string | text content, max length 512 chars | Cancellation conditions of the license |
-| continuityConditions | string |  text content, max length 512 chars | Continuity conditions of the license |
-| restrictions | string | text content, max length 512 chars  | Restrictions of the license |
+| termitationConditions | string | Text content, max length 512 chars | Cancellation conditions of the license |
+| continuityConditions | string |  Text content, max length 512 chars | Continuity conditions of the license |
+| restrictions | string | Text content, max length 512 chars  | Restrictions of the license |
 | geographicalArea | string |  ISO 3166-1 alpha-2 codes | License right restricted to the geographical area |
 | modificationRights | boolean | true/false | Data modification rights |
 | resellingRights | boolean | true/false | Reselling rights |
-| royalties | string | text content, max length 512 chars | License royalties |
 | governance | element | - | Governance is the approach taken to ensure that the agreed outcomes are being fulfilled |
 | containsPersonalData | boolean | true/false | Data contains personal data |
 | dpaURL| URL| Valid URL | The URL of the Data Processing Agreement (DPA) |
-| audit | string | text content, max length 512 chars | License auditing |
-| warranties | string | text content, max length 512 chars | License warranties |
-| forceMajeure | string | text content, max length 512 chars | Force Majeure |
-| damages| string | text content, max length 512 chars | Damages refers to the sum of money (i.e. indemnifications) for a breach of some duty or violation of license right |
-| confidentiality | string | text content, max length 512 chars| Restrictions and requirements imposed on the Data User regarding e.g. the use and disclosure of the Data Holder's confidential information |
-| applicableLaws | string | text content, max length 512 chars | Applicable laws, i.e local act or law |
+| audit | string | Text content, max length 512 chars | License auditing |
+| warranties | string | Text content, max length 512 chars | License warranties |
+| forceMajeure | string | Text content, max length 512 chars | Force Majeure |
+| damages| string | Text content, max length 512 chars | Damages refers to the sum of money (i.e. indemnifications) for a breach of some duty or violation of license right |
+| confidentiality | string | Text content, max length 512 chars| Restrictions and requirements imposed on the Data User regarding e.g. the use and disclosure of the Data Holder's confidential information |
+| applicableLaws | string | Text content, max length 512 chars | Applicable laws, i.e local act or law |
