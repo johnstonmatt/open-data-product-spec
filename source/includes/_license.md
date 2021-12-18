@@ -12,7 +12,6 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
          "definition": "The purpose of this license is to determine the terms and conditions applicable to the licensing of the data product, whereby Data Holder grants Data User the right to use the data.",
          "language": "en-us",
          "permanent": false,
-         "expiracyDate": "2022-12-15T00:00:00+02:00",
          "terminationContitions": "Cancellation before 30 days.",
          "continuityConditions": "Expired license will automatically continued without written cancellation (termination) by Data Holder",
          "restrictions": "Data User agrees not to, directly or indirectly, participate in the unauthorized use, disclosure or conversion of any confidential information.",      
@@ -42,10 +41,10 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 ```
 | <div style="width:150px">Element name</div>   | Type  | Options  | Description  |
 |---|---|---|---|
+| scope | element | - |  Extent, range, coverage, area or space of the license |
 | definition | string | text content, max length 512 chars  | Background and purpose of the license |
 | language | string | ISO 639-1 standard language codes | License language |
 | permanent | boolean | true/false|  License with no expiration date |
-| expiracyDate | DateTime | A combination of date and time in ISO 8601 format yyyy-MM-dd'T'HH:mm:ss.SSSZ. | License expiration date |
 | termitationContitions | string | text content, max length 512 chars | Cancellation of the license |
 | continuityConditions | string |  text content, max length 512 chars | Continuity of the license |
 | restrictions | string | text content, max length 512 chars  | Restrictions of the license |
@@ -53,6 +52,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | modificationRights | boolean | true/false | Data modification rights |
 | resellingRights | boolean | true/false | Reselling rights |
 | royalties | string | text content, max length 512 chars | License royalties |
+| governance | element | - | Governance is the approach taken to ensure that the agreed outcomes are being fulfilled |
 | containsPersonalData | boolean | true/false | Data contains personal data |
 | dpaURL| URL| Valid URL | The URL of the data processing agreement |
 | audit | string | text content, max length 512 chars | License auditing |
