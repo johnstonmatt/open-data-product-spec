@@ -679,7 +679,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td><strong>priceCurrency</strong></td>
 <td>string</td>
 <td>Use standard formats: <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> currency format e.g. &quot;USD&quot;; Ticker symbol for cryptocurrencies e.g. &quot;BTC&quot;</td>
-<td><strong>REQUIRED</strong> The primary currency used in pricing. Platforms are assumed to use this as primary currency if currency conversions are used to display product pricing in different locations for various currencies</td>
+<td><strong>REQUIRED</strong> The primary currency used in pricing. Platforms are assumed to use this as primary currency if currency conversions are used to display product pricing in different locations for various currencies. If the *unit*is revenue-sharing, then this attribute value MUST be percentage.</td>
 </tr>
 <tr>
 <td><strong>price</strong></td>
