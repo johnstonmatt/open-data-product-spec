@@ -54,10 +54,10 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | royalties | string | text content, max length 512 chars | License royalties |
 | governance | element | - | Governance is the approach taken to ensure that the agreed outcomes are being fulfilled |
 | containsPersonalData | boolean | true/false | Data contains personal data |
-| dpaURL| URL| Valid URL | The URL of the data processing agreement |
+| dpaURL| URL| Valid URL | The URL of the Data Processing Agreement (DPA) |
 | audit | string | text content, max length 512 chars | License auditing |
 | warranties | string | text content, max length 512 chars | License warranties |
 | forceMajeure | string | text content, max length 512 chars | Force Majeure |
 | damages| string | text content, max length 512 chars | Damages refers to the sum of money (i.e. indemnifications) for a breach of some duty or violation of license right |
 | confidentiality | string | text content, max length 512 chars| Restrictions and requirements imposed on the Data User regarding e.g. the use and disclosure of the Data Holder's confidential information |
-| applicableLaws | string | text content, max length 512 chars | Applicable laws, i.e local law and intellectual property rights |
+| applicableLaws | string | text content, max length 512 chars | Applicable laws, i.e local act or law |
