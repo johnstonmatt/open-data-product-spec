@@ -48,7 +48,7 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | termitationConditions | string | text content, max length 512 chars | Cancellation conditions of the license |
 | continuityConditions | string |  text content, max length 512 chars | Continuity conditions of the license |
 | restrictions | string | text content, max length 512 chars  | Restrictions of the license |
-| geographicalArea | string |  ISO 3166-1 alpha-2 codes | License right shall be restricted to the geographical area |
+| geographicalArea | string |  ISO 3166-1 alpha-2 codes | License right restricted to the geographical area |
 | modificationRights | boolean | true/false | Data modification rights |
 | resellingRights | boolean | true/false | Reselling rights |
 | royalties | string | text content, max length 512 chars | License royalties |
