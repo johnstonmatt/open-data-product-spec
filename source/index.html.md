@@ -45,6 +45,7 @@ The specification is shared under Attribution-ShareAlike 4.0 International (CC B
 * https://github.com/Data-Product-Business/open-data-product-spec 
 
 **Editors:**
+
 * Jarkko Moilanen 
 * Jussi Niilahti 
 
