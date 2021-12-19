@@ -639,6 +639,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <li>one time payments plans</li>
 <li>pay-as-you-go plans</li>
 <li>revenue sharing plans</li>
+<li>data volume plan</li>
 </ol>
 
 <p><button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script></p>
@@ -699,7 +700,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td><strong>priceCurrency</strong></td>
 <td>string</td>
 <td>Use standard formats: <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> currency format e.g. &quot;USD&quot;; Ticker symbol for cryptocurrencies e.g. &quot;BTC&quot;</td>
-<td><strong>REQUIRED</strong> The primary currency used in pricing. Platforms are assumed to use this as primary currency if currency conversions are used to display product pricing in different locations for various currencies. If the <em>unit</em> is revenue-sharing, then this attribute value MUST be percentage.</td>
+<td><strong>REQUIRED</strong> The primary currency used in pricing. Platforms are assumed to use this as primary currency if currency conversions are used to display product pricing in different locations for various currencies. If the <em>unit</em> is revenue-sharing, then this attribute value MUST be percentage. With <em>data-volume</em> the price is for each 1GB of data</td>
 </tr>
 <tr>
 <td><strong>price</strong></td>
@@ -716,8 +717,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <tr>
 <td><strong>unit</strong></td>
 <td>string</td>
-<td>one-time-payment, pay-per-use, recurring, revenue-sharing</td>
-<td><strong>REQUIRED</strong> One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. <br/><br/> Pay-per-use is intended for continuous usage and price set is for each successful usage action. <br/><br/> Recurrring is intended for continuous time period plans. <br/><br/>Revenue sharing is a performance-based income model. An effective revenue sharing deal structure is offering your expertise to a business owner to help them grow their business. In return, you get paid a percentage of the revenue as a royalty fee.</td>
+<td>one-time-payment, pay-per-use, recurring, revenue-sharing, data-volume</td>
+<td><strong>REQUIRED</strong> One-time-payment is for single time purchase purposes, further purchaces are not intended to continue under same agreement. <br/><br/> <em>Pay-per-use</em> is intended for continuous usage and price set is for each successful usage action. <br/><br/> <em>Recurrring</em> is intended for continuous time period plans. <br/><br/><em>Revenue sharing</em> is a performance-based income model. An effective revenue sharing deal structure is offering your expertise to a business owner to help them grow their business. In return, you get paid a percentage of the revenue as a royalty fee. <br/><br/> <em>Data-volume</em> is for data amount based pricing in which customer pays based on the served data amount. The price is always for 1GB of data.</td>
 </tr>
 <tr>
 <td><strong>maxTransactionQuantity</strong></td>
