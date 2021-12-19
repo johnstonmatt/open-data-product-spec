@@ -45,7 +45,15 @@ Supported pricing models include:
          "billingDuration": "month",
          "unit": "recurring",
          "maxTransactionQuantity":1000
-       }
+       },
+       {
+         "name":"Revenue sharing",
+         "priceCurrency":"percentage",
+         "price":"5.50",
+         "billingDuration": "month",
+         "unit": "revenue-sharing",
+         "maxTransactionQuantity":20000
+      }
    }
 ```
 
