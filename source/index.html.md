@@ -50,7 +50,7 @@ The specification is shared under Attribution-ShareAlike 4.0 International (CC B
 
 **Participate:**
 
-* [Raise an issue in Github](https://github.com/Data-Product-Business/open-data-product-spec/issues)
+* [Raise an issue in Github](https://github.com/Data-Product-Business/open-data-product-spec/issues/new/choose)
 * [Raise an issue in service designed for average mortals](https://v90nkeo0oq0.typeform.com/to/Q1Zo6wE5) 
 
 ## Introduction
