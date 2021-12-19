@@ -6,7 +6,7 @@ DataHolder **Object** describes the **Organization legally allowed to create, de
 
 The *data holder* might not be the original IPR owner of the data used, but has rights operate with it. The contract or other agreement between Provider and possible data owner is not part of the standard as metadata or licence wise.
 
-Mandatory attributes are listed in separate table and marked with **bolded names** and asterix **\***. Next to the mandatory attributes is an example. 
+Mandatory attributes are listed in separate table and marked with **REQUIRED** text. Next to the mandatory attributes is an example. 
 
 The same logic applies to the optional attributes as well. Optional attributes are listed in own table and an example is given in the right column. 
 
