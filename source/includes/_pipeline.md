@@ -14,15 +14,15 @@ Data Pipeline Object's purpose is enabling building, deploying, and running the 
     "composer": "helm",
     "format": "yaml",
     "status": "development",
-    "scriptURL": "http://192.168.10.1/test/runDataPipeline.yml",
-    "deploymentDocumentationURL": "http://192.168.10.1/test/docs/DocsDataPipeline"
+    "scriptURL": "http://192.168.10.1/test/rundatapipeline.yml",
+    "deploymentDocumentationURL": "http://192.168.10.1/test/docs/datapipeline"
   }, 
   "dataAccess" {
     "type": "API",
     "specification": "OAS",
     "format": "JSON",
     "specURL": "https://swagger.com/petstore.json",
-    "dataAccessDocumentationURL": "http://192.168.10.1/test/docs/dataaccessguide"
+    "dataAccessDocumentationURL": "http://192.168.10.1/test/docs/dataaccess"
   }
 }
 
