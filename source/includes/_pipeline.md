@@ -15,14 +15,14 @@ Data Pipeline Object's purpose is enabling building, deploying, and running the 
     "format": "yaml",
     "status": "development",
     "scriptURL": "http://192.168.10.1/test/runDataPipeline.yml",
-    "deploymentDocumentationURL": "http://192.168.10.1/test/docs/DocsDataPipeline.html"
+    "deploymentDocumentationURL": "http://192.168.10.1/test/docs/DocsDataPipeline"
   }, 
   "dataAccess" {
     "type": "API",
     "specification": "OAS",
     "format": "JSON",
     "specURL": "https://swagger.com/petstore.json",
-    "dataAccessDocumentationURL": "http://192.168.10.1/test/docs/dataaccessguide.html"
+    "dataAccessDocumentationURL": "http://192.168.10.1/test/docs/dataaccessguide"
   }
 }
 
