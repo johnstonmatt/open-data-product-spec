@@ -12,6 +12,11 @@ Supported pricing models include:
 2. one time payments plans
 3. pay-as-you-go plans
 4. revenue sharing plans
+<<<<<<< Updated upstream
+=======
+5. data volume plan
+6. dynamic pricing (high and low limits for automated pricing)
+>>>>>>> Stashed changes
 
 
 <button data-tf-popup="Q1Zo6wE5" data-tf-iframe-props="title=Customer Feedback Survey" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#FA6B05;color:#000000;font-size:17px;border-radius:3px;padding:0 28px;font-weight:bold;height:42.5px;cursor:pointer;line-height:42.5px;text-align:center;margin:0;text-decoration:none;">Raise an issue</button><script src="//embed.typeform.com/next/embed.js"></script>
