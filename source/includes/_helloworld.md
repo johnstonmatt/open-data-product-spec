@@ -5,123 +5,167 @@
 
 ```javascript
 {
-   "name":"Hello World Data Product",
-   "description":"Product catalogs published by standardization organizations.",
-   "valueProposition": "selling sentence here",
-   "rating":4.7,
-   "ratingCount":1259,
-   "activeUsers":123,
-   "visibility":"public",
-   "status":"Published",
-   "version": "1.0",
-   "dataStream":{
-        "harmonized":true,
-        "supportedPayload":{
-         "currentValues":{
-            "requestContext":"https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/",
-            "responseContext":"https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/",
-            "version":"2.0",
-            "versionHistory":[
-               "1.2",
-               "2.0"
-            ]
-         },
-         "historyValues":{
-            "requestContext":"https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/",
-            "responseContext":"https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/",
-            "version":"2.0",
-            "versionHistory":[
-               "1.2",
-               "2.0"
-            ]
-         },
-         "predictionValues":{
-            "requestContext":"https://standards-ontotest.oftrust.net/v2/Context/DataProductParameters/ProductCatalog/",
-            "responseContext":"https://standards-ontotest.oftrust.net/v2/Context/DataProductOutput/ProductCatalog/",
-            "version":"2.0",
-            "versionHistory":[
-               "1.2",
-               "2.0"
-            ]
-         }
-      }
-   },
-   "condition":[
-      {
-         "name":"Reselling limitation",
-         "descriptionGeneral":"Information cannot be sold further. Only to be used within buying organization.",
-      }
-   ],
-   "priceplan":[
+  "Product": {
+  "name":"Pets of the year",
+  "productID":"123456are",
+  "description":"",
+  "visibility":"private",
+  "status":"draft",
+  "version":"0.1",
+  "categories":"pets",
+  "tags":"pet",
+  "brandSlogan":"passion for the data monetization",
+  "type":"dataset",
+  "logoURL":"https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png"
+},
+"pricing":{
       {
          "name":"Premium subscription 1 year",
-         "currency":"EUR",
-         "unitGroup":"Duration",
-         "unit":"year",
-         "quantity":1,
-         "rate":1000
+         "priceCurrency":"EUR",
+         "price":"50.00",
+         "billingDuration": "year",
+         "unit": "recurring",
+         "maxTransactionQuantity":"unlimited"
       },
       {
-            "name":"Premium Package",
-            "currency":"EUR",
-            "unitGroup":"Transaction",
-            "unit":"Transaction",
-            "quantity":100000,
-            "rule":{
-               "maxQuantity":100000
-            },
-            "rate":100
-         },
+         "name":"Premium Package Monthly",
+         "priceCurrency":"EUR",
+         "price":"5.00", 
+         "billingDuration": "month",
+         "unit": "recurring",
+         "maxTransactionQuantity":10000
+       },
+       {
+         "name":"Freemium Package",
+         "priceCurrency":"EUR",
+         "price":"0.00", 
+         "billingDuration": "month",
+         "unit": "recurring",
+         "maxTransactionQuantity":1000
+       },
+       {
+         "name":"Revenue sharing",
+         "priceCurrency":"percentage",
+         "price":"5.50",
+         "billingDuration": "month",
+         "unit": "revenue-sharing",
+         "maxTransactionQuantity":20000
+      }
+   },
+
+   "dataPipeline": {
+      "infrastructure": {
+         "composer": "helm",
+         "format": "yaml",
+         "status": "development",
+         "scriptURL": "http://192.168.10.1/test/runDataPipeline.yml",
+         "deploymentDocumentationURL": "http://192.168.10.1/test/docs/DocsDataPipeline.html"
+      }, 
+      "dataAccess" {
+         "type": "API",
+         "specification": "OAS",
+         "format": "JSON",
+         "specURL": "https://swagger.com/petstore.json",
+         "dataAccessDocumentationURL": "http://192.168.10.1/test/docs/dataaccessguide.html"
+      }
+   },
+   "SLA": {
+      "updateFrequency": 
+      {
+         "unit": "hours",
+         "value": 1
+      },
+      "uptime": 
+      {
+         "unit": "percentage",
+         "value": 99
+      },
+      "responseTime": 
+      {
+         "unit": "milliseconds",
+         "value": 200
+      }
+      "nullValues": 
+      {
+         "unit": "percentage",
+         "value": 0.01
+      }
+      "support": 
+      {
+         "company": 
          {
-            "name":"Extra Requests",
-            "currency":"EUR",
-            "unitGroup":"Transaction",
-            "unit":"Transaction",
-            "quantity":1,
-            "rule":{
-               "minQuantity":100001
-            },
-            "rate":0.5
-         }
-   ],
-   "quality":[
-      {
-         "name":"Update frequency",
-         "value":"Information is updated once per day."
-      },
-      {
-         "name":"Uptime",
-         "value":"99%"
-      },
-      {
-         "name":"Response time",
-         "value":"400 ms"
-      }
-   ],
-   "service":[
-      {
-         "name":"Phone support hours",
-         "descriptionGeneral":"Support is available between 08-16 weekdays.",
-         "categorizationLocal":"Support",
-         "categorizationPoT":"dataProduct"
-      }
-   ],
-   "connector":[
-      {
-         "name":"Electrical devices catalog",
-         "descriptionGeneral":"Catalog of electrical devices.",
-         "version":"2.0",
-         "monitoring":{
-            "url":"https://status.uptimerobot.com/"
+            "phoneNumber":"",
+            "phoneServiceHours":""
+            "chatURL":"",
+            "chatServiceHours":"",
+            "chatResponseTime":"",
+            "email":"",
+            "emailServiceHours":"",
+            "emailResponseTime":"",
+            "documentationURL":"",
+            "guidesURL":"",
          },
-      },
+         "community": 
+         {
+            "stackoverflowURL": "",
+            "forumURL": "" 
+            "slackURL":"",
+            "twitterURL":""
+         }
+      }
+      "observability":
       {
-         "name":"Furniture  catalog",
-         "description":"Catalog of furniture.",
-         "version":"3.0",
-         "monitoring":{
-            "url":"https://status.uptimerobot.com/"
-        }
-   ]
+         "logsURL":"https://logs.com"
+         "dashboardURL":"https://dashboard.com",
+         "uptimeURL":"https://uptime.com"
+      } 
+   },
+
+   "license": {
+      "scope": {
+            "definition": "The purpose of this license is to determine the terms and conditions applicable to the licensing of the data product, whereby Data Holder grants Data User the right to use the data.",
+            "language": "en-us",
+            "permanent": false,
+            "terminationContitions": "Cancellation before 30 days.",
+            "continuityConditions": "Expired license will automatically continued without written cancellation (termination) by Data Holder",
+            "restrictions": "Data User agrees not to, directly or indirectly, participate in the unauthorized use, disclosure or conversion of any confidential information.",      
+            "geographicalArea": [ 
+               "EU",
+               "US"
+            ],
+            "modificationRight": true,
+            "resellingRight": true,
+               }
+      "governance": {
+            "containsPersonalData": true,
+            "dpaURL": "http://192.168.10.1/dpaconditions",
+            "audit": "Audit is conducted in accordance with the Petshop´s Data-audits ltd., www.petshopsdataaudits.com",
+            "warranties": "The Data User agrees that the following disclaimers apply to its customers and/or other entities.",
+            "forceMajeure": "Each party may suspend the fulfilment of its contractual obligations, when the said fulfilment is impossible or objectively too costly due to an unforeseeable impediment independent from the parties, such as for example: strike, boycott, lockout, fire, war (declared or not), civil war, riots and revolutions, requisitions, embargo, power blackouts, extraordinary breakage of machinery, delays in the delivery of components or raw materials.",
+            "damages": "During the term of license, except for the force majeure or the Data Holders reasons, Data User is required to follow strictly in accordance with the license. If Data User wants to terminate the license early, it needs to pay a certain amount of liquidated damages.",
+            "confidentiality": "Data User undertakes to maintain confidentiality as regards all information of a technical (such as, by way of a non-limiting example, drawings, tables, documentation, formulas and correspondence) and commercial nature (including contractual conditions, prices, payment conditions) gained during the performance of this license.", 
+            "applicableLaws": "This license shall be interpreted, construed and enforced in accordance with the law of Finland."
+      }
+   },
+   "dataHolder":
+      {
+         "taxID":"12243434-12",
+         "vatID":"12243434-12",
+         "logoURL":"https://mindmote.fi/logo.png",
+         "description":"Digital Economy services and tools",
+         "URL":"https://mindmote.fi",
+         "telephone": "+35845 0232 2323",
+         "streetAddress":"Koulukatu 1",
+         "postalCode":"33100",
+         "addressRegion":"Pirkanmaa",
+         "addressLocality":"Tampere",
+         "addressCountry":"Finland",
+         "aggregateRating":"",
+         "ratingCount":1245,
+         "slogan":"",
+         "parentOrganization":""
+      }
+
 }
+
 ```
