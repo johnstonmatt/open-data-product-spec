@@ -26,14 +26,6 @@ Supported pricing models include:
 ```javascript
    "pricing":{
       {
-         "name":"Premium subscription 1 year",
-         "priceCurrency":"EUR",
-         "price":"50.00",
-         "billingDuration": "year",
-         "unit": "recurring",
-         "maxTransactionQuantity":"unlimited"
-      },
-      {
          "name":"Premium Package Monthly",
          "priceCurrency":"EUR",
          "price":"5.00", 
@@ -56,6 +48,14 @@ Supported pricing models include:
          "billingDuration": "month",
          "unit": "revenue-sharing",
          "maxTransactionQuantity":20000
+      },
+      {
+         "name":"Premium subscription 1 year",
+         "priceCurrency":"EUR",
+         "price":"50.00",
+         "billingDuration": "year",
+         "unit": "recurring",
+         "maxTransactionQuantity":"unlimited"
       }
    }
 ```
