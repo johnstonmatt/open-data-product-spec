@@ -19,7 +19,7 @@ Specification aims
 **Note!** In the "Open Data Product" focus is on the latter words and the prefix 'open' refers to openness of the standard. Any kind of connotations to open data (different thing) are not intentional, intended or desirable. 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Data-Product-Business/open-data-product-spec/main/source/images/datapipeline-hydra.jpg" alt="Open Data Product Specification usage in data value chain" width="500">/
+  <img src="https://raw.githubusercontent.com/Data-Product-Business/open-data-product-spec/main/source/images/datapipeline-hydra.jpg" alt="Open Data Product Specification usage in data value chain" width="800">/
 </p>
 
 
