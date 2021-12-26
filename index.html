@@ -388,10 +388,10 @@
             <a href="#specification-extensions" class="toc-h1 toc-link" data-title="Specification extensions">Specification extensions</a>
           </li>
           <li>
-            <a href="#terms-used" class="toc-h1 toc-link" data-title="Terms used">Terms used</a>
+            <a href="#hello-world-example" class="toc-h1 toc-link" data-title="Hello world example">Hello world example</a>
           </li>
           <li>
-            <a href="#hello-world-example" class="toc-h1 toc-link" data-title="Hello world example">Hello world example</a>
+            <a href="#terms-used" class="toc-h1 toc-link" data-title="Terms used">Terms used</a>
           </li>
           <li>
             <a href="#editors-and-contributors" class="toc-h1 toc-link" data-title="Editors and contributors">Editors and contributors</a>
@@ -1503,36 +1503,6 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td>Allows extensions to the Open Data Product Schema. The field name MUST begin with x-, for example, x-internal-id. The value can be null, a primitive, an array or an object. Can have any valid JSON format value.</td>
 </tr>
 </tbody></table>
-<h1 id='terms-used'>Terms used</h1>
-<p>Here&#39;s list of terms used and what we mean with them. The meaning of terms is mostly taken from existing knowledge eg articles and other trusted sources. The source is always linked to the term. In some rare cases term is defined for the specification purposes only. </p>
-
-<table><thead>
-<tr>
-<th><div style="width:150px">Term</div></th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Data point</td>
-<td></td>
-</tr>
-<tr>
-<td>Data product</td>
-<td>As a strategic resource for companies, data is considered an asset that, like any other material good, has a financial value and whose management generates costs. Data created, collected or used in individual business processes can be sold to other organisations as raw or processed data, so that it no longer serves as an enabler of products, but is the product itself. This leads to the paradigm that data assets can be monetised by exchanging and trading data between organisations as data products and services. <br/><br/> There are multiple definitions for data product. In an <a href="https://arxiv.org/abs/2009.04462">article authored by Jian Pei (2020)</a>, data products &quot;<em>refer to data sets as products and information services derived from data sets.</em>&quot; Simon O&#39;Regan&#39;s defines data product as <em>a product whose primary objective is to use data to facilitate an end goal</em>. From the academic literature we have found several subtypes of data products: raw data, derived data, data sets, reports, analytic views, 3D visualisations, algorithms, decision support (dashboards) and automated decision-making (Netflix product recommendations or Spotify’s Discover Weekly would be common examples). <br/><br/>Typically raw data, derived data and algorithms have technical users. Most often they tend to be internal products in an organisation. <br/><br/> If we dive in the data mesh world, this quote from <a href="https://www.oreilly.com/library/view/data-mesh/9781492092384/">Zhamak Dehghani’s book</a> is key to understand the definition of data as a product: “<em>Domain data teams must apply product thinking […] to the datasets that they provide; considering their data assets as their products and the rest of the organization’s data scientists, ML and data engineers as their customers.</em>”<br/><br/>While many of the standard Product Development Rules apply — solve a customer need, learn from feedback, prioritise relentlessly, etc. — data has different characteristics compared to tangible products that prevent the direct transfer of established processes and rules of trading goods, especially in terms of pricing mechanisms. <br/> <br/>In trading data, there is less willingness to pay. For example, data buyers often do not recognise the potential value of data items because it cannot be fully disclosed prior to purchase (known as the ‘Arrow paradox’). <br/><br/>In addition, there is often a lack of notion that the creation, processing, storage and distribution of high-quality data is a major cost factor for the data provider. Another obstacle is the lack of trust and security causing potential data providers to fear that competitors could benefit from disclosure of in-house data. <br/><br/>One of the aims of this specification is to tackle above mentioned issues which hinder the growth of data ecosystem and market volatility.</td>
-</tr>
-<tr>
-<td>Data as a service</td>
-<td><a href="https://en.wikipedia.org/wiki/Data_as_a_service">In computing, data as a service, or DaaS</a>, is a term used to describe cloud-based software tools used for working with data, such as managing data in a data warehouse or analyzing data with business intelligence. It is enabled by software as a service (SaaS). DaaS like all &quot;as a service&quot; (aaS) technology, builds on the concept that its data product can be provided to the user on demand, regardless of geographic or organizational separation between provider and consumer. <br/><br/> <a href="https://www.forbes.com/sites/danielnewman/2017/02/07/data-as-a-service-the-big-opportunity-for-business/">According to Daniel Newman from Forbes (2017)</a> DaaS is essentially a data stream that subscribers can access on demand.  <br/><br/> Some people use the term data product in a meaning which contains also data commodities which have more service alike attributes than product attributes. In those cases we prefer to use the term <em>data as a service</em> and call the creation process as <em>data servitization</em>. The term <em>productizement</em> is reserved for the process which creates data products as end result.</td>
-</tr>
-<tr>
-<td>Data as a service business model</td>
-<td>Data as a service as a business model is a concept when two or more organizations buy, sell, or trade machine-readable data in exchange for something of value. Data as a service is a general term that encompasses data-related services. Now DaaS service providers are replacing traditional data analytics services or happily clustering with existing services to offer more value-addition to customers. The DaaS providers are curating, aggregating, analyzing multi-source data in order to provide additional more valuable analytical data or information. <br/><br/> Typically, DaaS business is based on subscriptions and customers pay for a package of services or definite services.</td>
-</tr>
-<tr>
-<td>Data pipeline</td>
-<td>According to <a href="https://research.chalmers.se/publication/523476/file/523476_Fulltext.pdf">Aiswarya et al.</a> the complex chain of interconnected activities or processes from data gen- eration through data reception constitutes a data pipeline. In other words, data pipelines are the connected chain of processes where the output of one or more processes becomes an input for another. It is a piece of software that removes many manual steps from the workflow and permits a streamlined, automated flow of data from one node to another. Moreover, it automates the operations involved in the selection, extraction, transformation, aggregation, validation, and loading of data for further analysis and visualization. It offers end to end speed by removing errors and resisting bottlenecks or delay. Data pipelines can process multiple streams of data simultaneously</td>
-</tr>
-</tbody></table>
 <h1 id='hello-world-example'>Hello world example</h1>
 <blockquote>
 <p>Example of complete working Data Product specification instance:</p>
@@ -1689,7 +1659,37 @@ The JSON examples are not based on any real data product, but exemplify the usag
   <span class="p">}</span>
 <span class="p">}</span>
 
-</code></pre></div><h1 id='editors-and-contributors'>Editors and contributors</h1>
+</code></pre></div><h1 id='terms-used'>Terms used</h1>
+<p>Here&#39;s list of terms used and what we mean with them. The meaning of terms is mostly taken from existing knowledge eg articles and other trusted sources. The source is always linked to the term. In some rare cases term is defined for the specification purposes only. </p>
+
+<table><thead>
+<tr>
+<th><div style="width:150px">Term</div></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Data point</td>
+<td></td>
+</tr>
+<tr>
+<td>Data product</td>
+<td>As a strategic resource for companies, data is considered an asset that, like any other material good, has a financial value and whose management generates costs. Data created, collected or used in individual business processes can be sold to other organisations as raw or processed data, so that it no longer serves as an enabler of products, but is the product itself. This leads to the paradigm that data assets can be monetised by exchanging and trading data between organisations as data products and services. <br/><br/> There are multiple definitions for data product. In an <a href="https://arxiv.org/abs/2009.04462">article authored by Jian Pei (2020)</a>, data products &quot;<em>refer to data sets as products and information services derived from data sets.</em>&quot; Simon O&#39;Regan&#39;s defines data product as <em>a product whose primary objective is to use data to facilitate an end goal</em>. From the academic literature we have found several subtypes of data products: raw data, derived data, data sets, reports, analytic views, 3D visualisations, algorithms, decision support (dashboards) and automated decision-making (Netflix product recommendations or Spotify’s Discover Weekly would be common examples). <br/><br/>Typically raw data, derived data and algorithms have technical users. Most often they tend to be internal products in an organisation. <br/><br/> If we dive in the data mesh world, this quote from <a href="https://www.oreilly.com/library/view/data-mesh/9781492092384/">Zhamak Dehghani’s book</a> is key to understand the definition of data as a product: “<em>Domain data teams must apply product thinking […] to the datasets that they provide; considering their data assets as their products and the rest of the organization’s data scientists, ML and data engineers as their customers.</em>”<br/><br/>While many of the standard Product Development Rules apply — solve a customer need, learn from feedback, prioritise relentlessly, etc. — data has different characteristics compared to tangible products that prevent the direct transfer of established processes and rules of trading goods, especially in terms of pricing mechanisms. <br/> <br/>In trading data, there is less willingness to pay. For example, data buyers often do not recognise the potential value of data items because it cannot be fully disclosed prior to purchase (known as the ‘Arrow paradox’). <br/><br/>In addition, there is often a lack of notion that the creation, processing, storage and distribution of high-quality data is a major cost factor for the data provider. Another obstacle is the lack of trust and security causing potential data providers to fear that competitors could benefit from disclosure of in-house data. <br/><br/>One of the aims of this specification is to tackle above mentioned issues which hinder the growth of data ecosystem and market volatility.</td>
+</tr>
+<tr>
+<td>Data as a service</td>
+<td><a href="https://en.wikipedia.org/wiki/Data_as_a_service">In computing, data as a service, or DaaS</a>, is a term used to describe cloud-based software tools used for working with data, such as managing data in a data warehouse or analyzing data with business intelligence. It is enabled by software as a service (SaaS). DaaS like all &quot;as a service&quot; (aaS) technology, builds on the concept that its data product can be provided to the user on demand, regardless of geographic or organizational separation between provider and consumer. <br/><br/> <a href="https://www.forbes.com/sites/danielnewman/2017/02/07/data-as-a-service-the-big-opportunity-for-business/">According to Daniel Newman from Forbes (2017)</a> DaaS is essentially a data stream that subscribers can access on demand.  <br/><br/> Some people use the term data product in a meaning which contains also data commodities which have more service alike attributes than product attributes. In those cases we prefer to use the term <em>data as a service</em> and call the creation process as <em>data servitization</em>. The term <em>productizement</em> is reserved for the process which creates data products as end result.</td>
+</tr>
+<tr>
+<td>Data as a service business model</td>
+<td>Data as a service as a business model is a concept when two or more organizations buy, sell, or trade machine-readable data in exchange for something of value. Data as a service is a general term that encompasses data-related services. Now DaaS service providers are replacing traditional data analytics services or happily clustering with existing services to offer more value-addition to customers. The DaaS providers are curating, aggregating, analyzing multi-source data in order to provide additional more valuable analytical data or information. <br/><br/> Typically, DaaS business is based on subscriptions and customers pay for a package of services or definite services.</td>
+</tr>
+<tr>
+<td>Data pipeline</td>
+<td>According to <a href="https://research.chalmers.se/publication/523476/file/523476_Fulltext.pdf">Aiswarya et al.</a> the complex chain of interconnected activities or processes from data gen- eration through data reception constitutes a data pipeline. In other words, data pipelines are the connected chain of processes where the output of one or more processes becomes an input for another. It is a piece of software that removes many manual steps from the workflow and permits a streamlined, automated flow of data from one node to another. Moreover, it automates the operations involved in the selection, extraction, transformation, aggregation, validation, and loading of data for further analysis and visualization. It offers end to end speed by removing errors and resisting bottlenecks or delay. Data pipelines can process multiple streams of data simultaneously</td>
+</tr>
+</tbody></table>
+<h1 id='editors-and-contributors'>Editors and contributors</h1>
 <p>This specification is openly developed and a lot of the work comes from community. We list all community contributors as a sign of appreciation. The editors (as initial creators of the the specification) are Jarkko Moilanen and Jussi Niilahti. Editors take the feedback and draft new candidate releases, which may become the versions of the specification. </p>
 <h2 id='list-of-community-contributors'>List of community contributors</h2>
 <p>The work around the specification would not be possible without enormous help from the community. Here&#39;s list of contributors so far. </p>
