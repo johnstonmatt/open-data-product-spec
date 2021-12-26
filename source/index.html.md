@@ -17,8 +17,8 @@ includes:
   - license
   - provider
   - extensions
-  - terms
   - helloworld
+  - terms
   - contributors
 
 search: true
