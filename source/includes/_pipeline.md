@@ -37,7 +37,7 @@ Data Pipeline Object's purpose is enabling building, deploying, and running the 
 | scriptURL | URL | Valid URL  | 	The URL of the deployment script. |
 | deploymentDocumentationURL | URL | Valid URL  | 	The URL of the deployment documentation |
 | DataAccess | element | - | Reference to the ability to use data |
-| type | string | Any  | 	Type of data access |
+| type | string | One of: API, SQL, sFTP, gRPC  | 	Type of data access |
 | specification | string | any  | Type of the data access specification |
 | format | string | any  | 	File format |
 | specsURL | URL | Valid URL  | 	The URL of the specification |
