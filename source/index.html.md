@@ -67,7 +67,7 @@ The Open Data Product Specification is a vendor-neutral, open-source machine-rea
 * speed up tools development around data product design, development and management.
 * enable creation of automated data product deployment with standard methods (DataOps)
 
-**Note!** In the "Open Data Product" focus is on the latter words and the prefix 'open' refers to openness of the standard. Any kind of connotations to open data (different thing) are not intentional, intended or desirable. 
+**Note!** In the "Open Data Product" focus is on the latter words and the prefix  'open' refers to the openness of the standard. Any kind of connotations to open data (a different thing) are not intentional, intended, or desirable.
 
 If you see something missing, described inaccurately or plain wrong, or you want to comment the specification, click the button below and proceed forward. 
 
