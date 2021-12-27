@@ -32,6 +32,7 @@ meta:
 
 # OPEN DATA PRODUCT SPECIFICATION
 
+<img src="/images/favicon.png"/>
 
 ## Version 1.0.0rc1
 
