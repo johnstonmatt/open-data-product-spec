@@ -1,5 +1,6 @@
 # Hello world example
 
+You'll find a complete machine-readbale example of a data product from the right column. It is imaginary data product *Pets of the year* which contains derived data about the most common pets in the world. The product has 4 pricing plans which are mostly based on recurring subscription model. Note! Not all voluntary attributes are used in the example.  
 
 > Example of complete working Data Product specification instance:
 
@@ -15,7 +16,7 @@
     "categories": "pets",
     "tags": "pet",
     "brandSlogan": "passion for the data monetization",
-    "type": "dataset",
+    "type": "derived data",
     "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png"
   },
   "pricing": [
