@@ -552,7 +552,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <td><strong>name</strong></td>
 <td>string</td>
 <td>max length 256 chars</td>
-<td>The name of the product.</td>
+<td><strong>REQUIRED</strong> The name of the product.</td>
 </tr>
 <tr>
 <td><strong>type</strong></td>
@@ -1512,6 +1512,8 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </tr>
 </tbody></table>
 <h1 id='hello-world-example'>Hello world example</h1>
+<p>You&#39;ll find a complete machine-readbale example of a data product from the right column. It is imaginary data product <em>Pets of the year</em> which contains derived data about the most common pets in the world. The product has 4 pricing plans which are mostly based on recurring subscription model. Note! Not all voluntary attributes are used in the example.  </p>
+
 <blockquote>
 <p>Example of complete working Data Product specification instance:</p>
 </blockquote>
@@ -1526,7 +1528,7 @@ The JSON examples are not based on any real data product, but exemplify the usag
     <span class="dl">"</span><span class="s2">categories</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">pets</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">tags</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">pet</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">brandSlogan</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">passion for the data monetization</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">dataset</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">derived data</span><span class="dl">"</span><span class="p">,</span>
     <span class="dl">"</span><span class="s2">logoURL</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png</span><span class="dl">"</span>
   <span class="p">},</span>
   <span class="dl">"</span><span class="s2">pricing</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
