@@ -132,7 +132,7 @@ Here's the list of attributes which can occur at the document root level. In the
 | **visibility**  | one of | one of: private, organisation, public | **REQUIRED** The publicity level eg who can see this product. Private - just the creator. Organisation - visible to all in your organisation. Public - visible to all publicly |
 | **name** | string | max length 256 chars | **REQUIRED** The name of the product. |
 | **status**  | one of | one of: announcement, draft, development, testing, acceptance, production, sunset, retired | **REQUIRED** The status of the product. Lifecycle model discussed in details in here (link). |
-| **name** | string | max length 256 chars | The name of the product. |
+| **name** | string | max length 256 chars | **REQUIRED** The name of the product. |
 | **type** | one of |  Options: raw data, derived data, dataset, reports, analytic view, 3D visualisation, algorithm, decision support, automated decision-making, bi-directional | **REQUIRED** The type of the product. Options are derived from examples and lists found from academic literature  | 
 
 
