@@ -25,12 +25,12 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
    "governance": {
          "containsPersonalData": true,
          "dpaURL": "http://192.168.10.1/dpaconditions",
-         "audit": "Audit is conducted in accordance with the Petshop´s Data-audits ltd., www.petshopsdataaudits.com",
+         "audit": "Data Holder will reasonably cooperate with Data User by providing available additional information concerning the data product. Each party will bear its own costs with respect to the audit procedures.",
          "warranties": "The Data User agrees that the following disclaimers apply to its customers and/or other entities.",
          "forceMajeure": "Each party may suspend the fulfilment of its contractual obligations, when the said fulfilment is impossible or objectively too costly due to an unforeseeable impediment independent from the parties, such as for example: strike, boycott, lockout, fire, war (declared or not), civil war, riots and revolutions, requisitions, embargo, power blackouts, extraordinary breakage of machinery, delays in the delivery of components or raw materials.",
          "damages": "During the term of license, except for the force majeure or the Data Holders reasons, Data User is required to follow strictly in accordance with the license. If Data User wants to terminate the license early, it needs to pay a certain amount of liquidated damages.",
          "confidentiality": "Data User undertakes to maintain confidentiality as regards all information of a technical (such as, by way of a non-limiting example, drawings, tables, documentation, formulas and correspondence) and commercial nature (including contractual conditions, prices, payment conditions) gained during the performance of this license." 
-         "applicableLaws": "This license shall be interpreted, construed and enforced in accordance with the law of Finland."
+         "applicableLaws": "This license shall be interpreted, construed and enforced in accordance with the law of Finland, Incl. Copyright Act 404/1961."
    }
   }
 }
@@ -52,9 +52,9 @@ The data product may be exploited e.g. by licensing its use and exploitation to 
 | governance | element | - | Governance is the approach taken to ensure that the agreed outcomes are being fulfilled |
 | containsPersonalData | boolean | true/false | Data contains personal data |
 | dpaURL| URL| valid URL | The URL of the Data Processing Agreement (DPA) |
-| audit | string | text content, max length 512 chars | License auditing |
+| audit | string | text content, max length 512 chars | License auditing terms |
 | warranties | string | text content, max length 512 chars | License warranties |
 | forceMajeure | string | text content, max length 512 chars | Force Majeure |
 | damages| string | text content, max length 512 chars | Damages refers to the sum of money (i.e. indemnifications) for a breach of some duty or violation of license right |
 | confidentiality | string | text content, max length 512 chars| Restrictions and requirements imposed on the Data User regarding e.g. the use and disclosure of the Data Holder's confidential information |
-| applicableLaws | string | text content, max length 512 chars | Applicable laws, i.e local act or law |
+| applicableLaws | string | text content, max length 512 chars | Applicable laws, i.e local acts, degrees or law |
