@@ -38,7 +38,7 @@ Data Pipeline Object's purpose is enabling building, deploying, and running the 
 | status | string  | Options: announcement, draft, development, testing, acceptance, production, sunset, retired |
 | scriptURL | URL | Valid URL  | 	The URL of the deployment script. |
 | deploymentDocumentationURL | URL | Valid URL  | 	The URL of the deployment documentation |
-| hashType| string | one of: SHA-1, SHA-2, SHA-3 | Secure hash algorithm type of checksum |
+| hashType| string | One of: SHA-1, SHA-2, SHA-3 | Type of secure hash algorithm for checksum |
 | checksum| string | any  | 	Deployment script checksum |
 | DataAccess | element | - | Reference to the ability to use data |
 | type | string | One of: API, SQL, sFTP, gRPC  | 	Type of data access |
