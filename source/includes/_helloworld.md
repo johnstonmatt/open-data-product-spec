@@ -53,14 +53,16 @@ You'll find a complete machine-readbale example of a data product from the right
       "maxTransactionQuantity": 20000
     }
   ],
-  "dataPipeline": {
-    "infrastructure": {
-      "composer": "helm",
-      "format": "yaml",
-      "status": "development",
-      "scriptURL": "http://192.168.10.1/test/runDataPipeline.yml",
-      "deploymentDocumentationURL": "http://192.168.10.1/test/docs/DocsDataPipeline.html"
-    },
+"dataPipeline": {
+  "infrastructure": {
+    "composer": "helm",
+    "format": "yaml",
+    "status": "development",
+    "scriptURL": "http://192.168.10.1/test/rundatapipeline.yml",
+    "deploymentDocumentationURL": "http://192.168.10.1/test/docs/datapipeline",
+    "hashType": "SHA-2",
+    "checksum": "7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921"
+  }, 
     "dataAccess": {
       "type": "API",
       "specification": "OAS",
