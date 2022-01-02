@@ -39,7 +39,7 @@ Data Pipeline Object's purpose is enabling building, deploying, and running the 
 | scriptURL | URL | Valid URL  | 	The URL of the deployment script. |
 | deploymentDocumentationURL | URL | Valid URL  | 	The URL of the deployment documentation |
 | hashType| string | One of: SHA-1, SHA-2, SHA-3 | Type of secure hash algorithm for checksum |
-| checksum| string | [SHA-2](https://en.wikipedia.org/wiki/SHA-2)  | 	Deployment script checksum |
+| checksum| string | Must be [SHA-2](https://en.wikipedia.org/wiki/SHA-2) based  | 	Deployment script checksum |
 | DataAccess | element | - | Reference to the ability to use data |
 | type | string | One of: API, SQL, sFTP, gRPC  | 	Type of data access |
 | specification | string | any  | Type of the data access specification |
