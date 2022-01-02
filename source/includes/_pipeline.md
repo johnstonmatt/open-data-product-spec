@@ -15,7 +15,9 @@ Data Pipeline Object's purpose is enabling building, deploying, and running the 
     "format": "yaml",
     "status": "development",
     "scriptURL": "http://192.168.10.1/test/rundatapipeline.yml",
-    "deploymentDocumentationURL": "http://192.168.10.1/test/docs/datapipeline"
+    "deploymentDocumentationURL": "http://192.168.10.1/test/docs/datapipeline",
+    "hashType": "SHA-2",
+    "checksum": "7b7444ab8f5832e9ae8f54834782af995d0a83b4a1d77a75833eda7e19b4c921"
   }, 
   "dataAccess" {
     "type": "API",
@@ -36,6 +38,8 @@ Data Pipeline Object's purpose is enabling building, deploying, and running the 
 | status | string  | Options: announcement, draft, development, testing, acceptance, production, sunset, retired |
 | scriptURL | URL | Valid URL  | 	The URL of the deployment script. |
 | deploymentDocumentationURL | URL | Valid URL  | 	The URL of the deployment documentation |
+| hashType| string | one of: SHA-1, SHA-2, SHA-3 | Secure hash algorithm type of checksum |
+| checksum| string | any  | 	Deployment script checksum |
 | DataAccess | element | - | Reference to the ability to use data |
 | type | string | One of: API, SQL, sFTP, gRPC  | 	Type of data access |
 | specification | string | any  | Type of the data access specification |
