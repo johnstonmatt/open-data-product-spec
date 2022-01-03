@@ -48,8 +48,8 @@ The specification is shared under Attribution-ShareAlike 4.0 International (CC B
 
 **Editors:**
 
-* Jarkko Moilanen 
-* Jussi Niilahti 
+* <a href="https://www.linkedin.com/in/jarkkomoilanen/">Jarkko Moilanen</a>
+* <a href="https://www.linkedin.com/in/jussi-niilahti/">Jussi Niilahti</a>
 
 **Participate:**
 
