@@ -79,18 +79,18 @@ Supported pricing models include:
 ```javascript
    "pricing"{
       {
-         "name":"Premium subscription 1 year",
-         "priceCurrency":"EUR",
-         "price":"10.00",
-         "minPrice":"5.00",
-         "maxPrice":"15.000"
-         "additionalPrice":0.02
+         "name": "Premium subscription 1 year",
+         "priceCurrency": "EUR",
+         "price": "10.00",
+         "minPrice": "5.00",
+         "maxPrice": "15.000"
+         "additionalPrice": 0.02
       },
       {
-         "name":"Premium Package",
-         "priceCurrency":"EUR",
-         "price":"10.00",
-         "maxPrice":"20.00",
+         "name": "Premium Package",
+         "priceCurrency": "EUR",
+         "price": "10.00",
+         "maxPrice": "20.00",
          "valueAddedTaxIncluded": false
        }
    }
