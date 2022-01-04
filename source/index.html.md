@@ -44,12 +44,12 @@ The specification is shared under Attribution-ShareAlike 4.0 International (CC B
 
 **Latest version source:**
 
-* https://github.com/Data-Product-Business/open-data-product-spec 
+* <a href="https://github.com/Data-Product-Business/open-data-product-spec">https://github.com/Data-Product-Business/open-data-product-spec</a>
 
 **Editors:**
 
-* Jarkko Moilanen 
-* Jussi Niilahti 
+* <a href="https://www.linkedin.com/in/jarkkomoilanen/">Jarkko Moilanen</a>
+* <a href="https://www.linkedin.com/in/jussi-niilahti/">Jussi Niilahti</a>
 
 **Participate:**
 
@@ -127,8 +127,8 @@ Here's the list of attributes which can occur at the document root level. In the
 | <div style="width:150px">Element name</div>   | Type  | Options  | Description  |
 |---|---|---|---|
 | **name** | string | max length 256 chars | **REQUIRED**The name of the product. |
-| **productID** | string | max length 256 chars | **REQUIRED** Product identifier. |
-| **name** | string |  max length 256 chars | **REQUIRED** The name of the product. |
+| **productID** **REQUIRED** | string | max length 256 chars | **REQUIRED** Product identifier. |
+| **name** **REQUIRED** | string |  max length 256 chars | **REQUIRED** The name of the product. |
 | **visibility**  | one of | one of: private, organisation, public | **REQUIRED** The publicity level eg who can see this product. Private - just the creator. Organisation - visible to all in your organisation. Public - visible to all publicly |
 | **name** | string | max length 256 chars | **REQUIRED** The name of the product. |
 | **status**  | one of | one of: announcement, draft, development, testing, acceptance, production, sunset, retired | **REQUIRED** The status of the product. Lifecycle model discussed in details in here (link). |
