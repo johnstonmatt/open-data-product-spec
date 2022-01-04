@@ -34,30 +34,30 @@ No mandatory attributes at the moment. Optional attributes are listed in own tab
       {
          "company": 
          {
-            "phoneNumber":"",
-            "phoneServiceHours":""
+            "phoneNumber": "",
+            "phoneServiceHours": ""
             "chatURL":"",
-            "chatServiceHours":"",
-            "chatResponseTime":"",
-            "email":"",
-            "emailServiceHours":"",
-            "emailResponseTime":"",
-            "documentationURL":"",
-            "guidesURL":"",
+            "chatServiceHours": "",
+            "chatResponseTime": "",
+            "email": "",
+            "emailServiceHours": "",
+            "emailResponseTime": "",
+            "documentationURL": "",
+            "guidesURL": "",
          },
          "community": 
          {
             "stackoverflowURL": "",
             "forumURL": "" 
-            "slackURL":"",
-            "twitterURL":""
+            "slackURL": "",
+            "twitterURL": ""
          }
       }
       "observability":
       {
-         "logsURL":"https://logs.com"
-         "dashboardURL":"https://dashboard.com",
-         "uptimeURL":"https://uptime.com"
+         "logsURL": "https://logs.com"
+         "dashboardURL": "https://dashboard.com",
+         "uptimeURL": "https://uptime.com"
       } 
    }
 ```
