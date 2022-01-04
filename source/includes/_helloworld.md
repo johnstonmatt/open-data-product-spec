@@ -15,7 +15,7 @@ You'll find a complete machine-readbale example of a data product from the right
     "version": "0.1",
     "categories": ["pets"],
     "tags": ["pet"],
-    "brandSlogan": "passion for the data monetization",
+    "brandSlogan": "Passion for the data monetization",
     "type": "derived data",
     "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png"
   },
