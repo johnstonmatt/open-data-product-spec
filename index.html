@@ -751,18 +751,18 @@ The JSON examples are not based on any real data product, but exemplify the usag
 </blockquote>
 <div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">pricing</span><span class="dl">"</span><span class="p">{</span>
       <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium subscription 1 year</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">minPrice</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">maxPrice</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">15.000</span><span class="dl">"</span>
-         <span class="dl">"</span><span class="s2">additionalPrice</span><span class="dl">"</span><span class="p">:</span><span class="mf">0.02</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Premium subscription 1 year</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">minPrice</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">5.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">maxPrice</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">15.000</span><span class="dl">"</span>
+         <span class="dl">"</span><span class="s2">additionalPrice</span><span class="dl">"</span><span class="p">:</span> <span class="mf">0.02</span>
       <span class="p">},</span>
       <span class="p">{</span>
-         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Premium Package</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span><span class="p">,</span>
-         <span class="dl">"</span><span class="s2">maxPrice</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">20.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Premium Package</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">priceCurrency</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">EUR</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">price</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">10.00</span><span class="dl">"</span><span class="p">,</span>
+         <span class="dl">"</span><span class="s2">maxPrice</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">20.00</span><span class="dl">"</span><span class="p">,</span>
          <span class="dl">"</span><span class="s2">valueAddedTaxIncluded</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span>
        <span class="p">}</span>
    <span class="p">}</span>
@@ -1503,10 +1503,10 @@ The JSON examples are not based on any real data product, but exemplify the usag
 <p>Example of extension usage:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight javascript tab-javascript"><code>   <span class="dl">"</span><span class="s2">Product</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
-      <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
-      <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
-      <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span><span class="dl">""</span><span class="p">,</span>
-      <span class="dl">"</span><span class="s2">x-internal-id</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">foobar123</span><span class="dl">"</span>
+      <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Pets of the year</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">productID</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">123456are</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">description</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">x-internal-id</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">foobar123</span><span class="dl">"</span>
 <span class="p">}</span>
 
 </code></pre></div>
