@@ -9,17 +9,17 @@ The schemas can be defined as referenced (URL or local file systen path). In the
 ```javascript
    "Schemas": {
       "group": {
-         "name":"",
-         "description":"",
+         "name": "",
+         "description": "",
          "query":{
-            "type":"ref",
-            "schemaURL":"https://myschemas.org/objects/query.json",
-            "documentation":""
+            "type": "ref",
+            "schemaURL": "https://myschemas.org/objects/query.json",
+            "documentation": ""
          }
          "responsePayload":{
-            "type":"ref",
-            "schemaURL":"https://myschemas.org/objects/payload.json",
-            "documentation":""
+            "type": "ref",
+            "schemaURL": "https://myschemas.org/objects/payload.json",
+            "documentation": ""
          }
       }
    }
