@@ -115,11 +115,11 @@ Here's the list of attributes which can occur at the document root level. In the
 
 ```javascript
 "Product": {
-  "name":"Pets of the year",
-  "productID":"123456are",
-  "visibility":"private",
-  "status":"draft",
-  "type":"dataset"
+  "name": "Pets of the year",
+  "productID": "123456are",
+  "visibility": "private",
+  "status": "draft",
+  "type": "dataset"
 }
 
 ```
@@ -142,17 +142,17 @@ Here's the list of attributes which can occur at the document root level. In the
 
 ```javascript
 "Product": {
-  "name":"Pets of the year",
-  "productID":"123456are",
-  "description":"",
-  "visibility":"private",
-  "status":"draft",
-  "version":"0.1",
-  "categories":["pets"],
+  "name": "Pets of the year",
+  "productID": "123456are",
+  "description": "",
+  "visibility": "private",
+  "status": "draft",
+  "version": "0.1",
+  "categories": ["pets"],
   "tags": ["pet"],
-  "brandSlogan":"passion for the data monetization",
-  "type":"dataset",
-  "logoURL":"https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png"
+  "brandSlogan": "Passion for the data monetization",
+  "type": "dataset",
+  "logoURL": "https://data-product-business.github.io/open-data-product-spec/images/logo-dps-ebd5a97d.png"
 }
 
 ```
