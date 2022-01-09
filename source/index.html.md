@@ -40,7 +40,7 @@ The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL 
 
 The specification is shared under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license. 
 
-**Published 16 Dec 2021**
+**Published 9 Jan 2022**
 
 **Latest version source:**
 
