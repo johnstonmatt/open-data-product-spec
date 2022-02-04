@@ -34,13 +34,13 @@ meta:
 # OPEN DATA PRODUCT SPECIFICATION
 
 
-## Version 1.0.0rc1
+## Version 1.0
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here.
 
 The specification is shared under Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license. 
 
-**Published 9 Jan 2022**
+**Published 4th Feb 2022**
 
 **Latest version source:**
 
