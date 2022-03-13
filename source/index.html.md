@@ -60,6 +60,9 @@ The specification is shared under Attribution-ShareAlike 4.0 International (CC B
 
 The Open Data Product Specification is a vendor-neutral, open-source machine-readable data product metadata model. It defines the objects and attributes as well as the structure of digital data products. The work is based on existing standards (schema.org), best practices and emerging concepts like Data Mesh. The reasoning is that we reuse and proudly copy instead of reinventing the wheel. More detailed information of the origin can be found from the [Open Data Product Specification homepage](https://www.dataproductbusiness.com/open-data-product-specification). 
 
+
+![odps-model](images/ODPS-design.jpg)
+
 **Specification aims:**
 
 * enable interoperability between organizations, data platforms,  marketplaces, and tools. 
